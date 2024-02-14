@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<link rel="stylesheet" href="css/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<title>自然豊かな味を体感しよう</title>
+</head>
+<body>
+<header>
+	<h1 class="h-logo"><img src="images/H-logo.jpg"></h1>
+</header>
+	<div id="h-main-pages">
+		<ul id="h-navi">
+			<li><a href="h-product.html">作る浜松</a></li>
+			<li><a href="h-event.html">魅せる浜松</a></li>
+			<li><a href="h-eating.html">食べる浜松</a></li>
+			<li><a href="h-sightseeing.html">観る浜松</a></li>
+			<li><a href="h-sports.html">スポーツの浜松</a></li>
+			<li><a href="h-traffic.html">走る浜松</a></li>
+		</ul>
+	</div>
+			<!--------パンくずリスト-------->
+			<div id="breadcrumb">
+				<ol>
+					<li><a href="top.html">トップページ</a></li>
+					<li>魅せる浜松</li>
+				</ol>
+				</div>
+				<div id="h-contents">
+					<p id="top-return">
+                            <a href="#gn_p">↑</a>
+                        </p>
+            
+                        <style type="text/css">
+                        
+                        #top-return {
+							text-align: center;
+							position: fixed;
+                            bottom: 15px;
+                            right: 15px;
+                            font-size: 30px;
+							background-color: #F5E0E0;
+                        }
+                        #top-return a {
+							box-shadow: 2px 2px 2px #0000ff;
+                            display: block;
+							border: 1px solid #000;
+							width: 60px;
+							height: 40px;
+							text-decoration-line: none;
+                            }
+                        #top-return a:hover {
+							transition: 0.3s;
+							cursor: pointer;
+						}
+			 </style>
+    
+                        <script type="text/javascript">
+                        $(function(){
+                            var pagetop = $('#top-return');
+                            pagetop.hide();
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    pagetop.fadeIn();
+                                } else {
+                                    pagetop.fadeOut();
+                                }
+                            });
+                            pagetop.click(function () {
+                                $('body, html').animate({ scrollTop: 0 }, 10);
+                                return false;
+                            });
+                        });
+                        </script>
+			<!--------イベント情報-------->
+			<h1 class="index-title">イベント</h1>
+			<p class="info-intro">浜松市を盛り上げるイベントは、空・陸・海と自然の要素を生かしたものばかりです。<br>
+				伝統と地域色も凝縮されており、県内外から来る人たちも惹きつけてやまず、浜松の元気印そのものですね。
+				そんな地元を象徴し、盛り上げ続けるイベントの数々を見ていきましょう。</p>
+			<section id="h-variety-corner">
+				<section id="event-intro">
+			<h2 class="index-name">浜松まつり</h2>
+			<figure><img src="images/h-kite01.JPG" width="450" height="338">
+			<p>浜松市が最も盛り上がるイベントが浜松まつり。GWの３日間において、
+				各町の屋台や男衆による練りが年間最大かつ最高の熱気をもたらします。
+				初夏を迎える・・・<a href="h-festival.html">(続きを見る)</a>
+				</p>
+		</figure>
+			</section>
+							
+				<section id="variety-intro">
+			<h2 class="index-name">エア・フェスタ</h2>
+			<figure><img src="images/air-fes01.jpg" width="450" height="338">
+			<p>全国的にも名高い、浜松の航空基地の祭典があります。それがエア・フェスタですが、
+				ブルーインパルスによるアクロバティックな飛行から航空自衛隊で使う航空機、
+				陸上自衛隊の・・・<a href="h-air-fes.html">(続きを見る)</a>
+				</p>
+		</figure>
+		</section>
+				
+				<section id="variety-intro">
+					<h2 class="index-name">三ケ日花火大会</h2>
+				<figure><img src="" width="450" height="338">
+					<p></p>
+                </figure>
+				</section>
+				
+				<section id="variety-intro">
+					<h2 class="index-name">天竜飛竜まつり</h2>
+				<figure><img src="" width="450" height="338">
+					<p></p>
+                </figure>
+				</section>
+</section>
+		 </div>
+		 </body>
+		 <footer>
+			<nav id="h-foot-menu">
+				<ul class="h-main-part">
+					<li><a href="h-product.html">作る浜松</a></li>
+					<li><a href="h-event.html">魅せる浜松</a></li>
+					<li><a href="h-eating.html">食べる浜松</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li><a href="h-sports.html">スポーツの浜松</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+				</ul>
+				<ul class="h-social">
+					<li><img src="images/insta-mark.gif"><a href="#">hamatour</a></li>
+					<li><img src="images/fb-mark.gif"><a href="#">hamatour-meta</a></li>
+				</ul>
+			</nav>
+		 </footer>
+</html>

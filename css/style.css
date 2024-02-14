@@ -1,0 +1,532 @@
+@charset "utf-8";
+body {
+    width: 100vw;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+#h-navi li a:visited,
+#breadcrumb ol li a:visited,
+#h-foot-menu li a:visited {
+	color: inherit;
+}
+header {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+header h1 {
+	float: left;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+header h1 img {
+	width: 300px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+header #social {
+	float: right;
+	margin-top: 50px;
+	
+}
+.sns-intro {
+	text-align: left;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-size: 15px;
+	text-shadow: 2px 2px 2px #00ff00;
+}
+header #social ul {
+	float: right;
+	margin-top: 10px;
+	padding: 0;
+}
+header #social ul li {
+	float: right;
+	padding: 0;
+	list-style: none;
+}
+/*-----------------------------
+	g-navi
+------------------------------*/
+#h-main-pages {
+	width: 100vw;
+	margin: 0 auto;
+	text-align: center;
+}
+#h-navi {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	padding: 25px;
+	border: 2px solid #fff;
+	background-image: url(../images/bgcover-3.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+#h-navi li {
+	float: left;
+	width: 200px;
+	border-left: 2px solid #ff0000;
+	list-style: none;
+}
+#h-navi li:first-child {
+	margin-left: 110px;
+}
+#h-navi li:last-child {
+	border-right: 2px solid #ff0000;
+}
+#h-navi li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+    font-size: 25px;
+}
+#h-navi li a:hover {
+	color: #fff;
+	background-color: #0000ff;
+	transition: 0.3s;
+	padding: 5px 8px;
+	box-shadow: 3px 3px 3px #d5d5d5;
+}
+/*------------------------------
+  ヘッダー画像のストリーミング
+------------------------------*/
+#head-move {
+	position: relative;
+	width: 100vw;
+	height: 480px;
+	background-color: #E3D0D1;
+	overflow: hidden;
+	}
+#head-move img {
+	width: 1100px;
+	height: 480px;
+	margin-left: 60px;
+}
+#head-move .head-words {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%; 
+	height: 100%;
+	font-weight: lighter;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+	text-shadow: -2px 2px 2px #d5d5d5,  2px 2px 2px #d5d5d5;
+}
+/*------------------------------
+  パンくずリスト
+------------------------------*/
+#breadcrumb { 
+	width: 100vw;
+	background-color: #00ff00;
+	font-weight: bolder;
+	text-shadow: 5px 5px 2px #d3d3d3;
+	margin: 0 calc(50% - 50vw);
+	list-style: none;
+    padding: 5px 0 5px 100px ;
+}
+#breadcrumb ol li {
+    display: inline; 
+}
+#breadcrumb ol li::after {
+    content: ">";
+    padding-left: 8px;
+}
+#breadcrumb ol li:last-child::after { 
+    content: none;
+}
+/*-----------------------------
+　　　タイトルバーの表示設定
+------------------------------*/
+.index-title,
+.info-intro {
+	padding-left: 130px;
+}
+.index-name {
+	width: 100vw;
+	border: 2px solid #fff;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+	text-shadow: 3px 3px 3px #f5f5f5,  -3px -3px 3px #f5f5f5;
+	padding: 20px 0 20px 130px;
+	margin: 0 cal(50% - 50vw);
+	background: linear-gradient(45deg, #66ccff, #ffff99, #00ff99);
+	background-size: 200% 200%;
+	animation: bggradient 10s ease infinite;
+}
+@keyframes bggradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*-----------------------------
+　　　全メニューページの表示設定
+------------------------------*/
+#kanko-objects {
+	width: 100vw;
+	margin: 0 calc(50vw - 50%);
+	padding: 0;
+}
+#h-contents {
+	width: 1100px;
+	margin-left: 0;
+	padding: 0;
+}
+#h-variety-corner {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#h-variety-corner section {
+	float: left;
+	width: 100vw;
+}
+#h-variety-corner figure {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+#h-variety-corner figure img {
+	float: left;
+	margin-right: 40px;
+	border-radius: 300px;
+	padding: 0;
+}
+#h-variety-corner figure p {
+	text-shadow: 3px 3px 3px #00ff00;
+	font-size: 20px;
+	font-family: "ＭＳ Ｐ明朝", "ＭＳ 明朝", "BIZ UDP明朝 Medium", "BIZ UD明朝 Medium";
+	letter-spacing: 0.4em;
+	line-height: 1.5em
+}
+#variety-intro {
+	width: 1000px;
+	margin-bottom: 20px;
+}
+/*-----------------------------
+　　　画像とテーブル、文章のセット
+------------------------------*/	
+#right-view, #left-view {
+	width: 1100px;
+	margin-bottom: 40px;
+}
+#right-view p {
+	float: left;
+	width: 650px;
+	margin-right: 80px;
+}
+#right-view figure img {
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+}
+#left-view figure img {
+	float: left;
+	margin-right: 40px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+}
+/*-----------------------------
+　　 　スポーツの浜松
+------------------------------*/
+#team-corner {
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+}
+.team-info {
+	width: 1000px;
+	margin-left: 50px;
+}
+.bresu-container {
+	background-image: url("../images/bresu-head.jpg");
+	width: 100vw;
+	height: 400px;
+}
+.fenix-container {
+	background-image: url("../images/fenix-head.jpg");
+	width: 100vw;
+	height: 400px;
+}
+.honda-container {
+	background-image: url("../images/honda-head.jpg");
+	width: 100vw;
+	height: 400px;
+}
+.Aguremina-container {
+	background-image: url("../images/honda-head.jpg");
+	width: 100vw;
+	height: 400px;
+}
+/*-----------------------------
+　　 　走る浜松
+------------------------------*/
+#traffics {
+	width: 1200px;
+	margin-left: 120px;
+	padding: 0;
+}
+/*-----------------------------
+　　 　天浜線
+------------------------------*/
+#tenhama-info {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	background-image: url("../images/bgcover-4.jpg");
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.th-intro {
+	margin-left: 50px;
+}
+#train-box-left {
+	width: 650px;
+	margin-left: 120px;
+	padding: 0;
+	border: 2px solid #000;
+	box-shadow: 2px 2px 2px #E3ACAD;
+	border-radius: 10px;
+	background-image: url("../images/bgcover-4.jpg");
+	color: #000;
+}
+#train-box-right {
+	float: left;
+	width: 650px;
+	margin-right: 20px;
+	padding: 0;
+	border: 2px solid #000;
+	box-shadow: 2px 2px 2px #E3ACAD;
+	border-radius: 10px;
+	background-image: url("../images/bgcover-4.jpg");
+	color: #000;
+}
+.table-line {
+	width: 200px;
+}
+#train-sorts section table tr td {
+	padding: 10px 0;
+}
+#TH-legacy {
+	width: 1200px;
+	margin: 20px 0;
+	padding: 0;
+}
+#legacy-index {
+	width: 1000px;
+	margin: 0 100px;
+	padding: 0;
+	overflow: hidden;
+}
+#legacy-index section {
+	width: 1000px;
+	overflow: hidden;
+}
+#legacy-index section figure img {
+	box-shadow: 5px 5px 5px #d5d5d5;
+	border-radius: 30px;
+}
+#legacy-index section figure {
+	float: left;
+	width: 300px;
+	margin: 0 200px 0 0;
+}
+#legacy-index section figure figcaption {
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	text-shadow: 2px 2px 2px #fff;
+}
+#legacy-index section table {
+	width: 350px;
+	padding: 0;
+	margin: 80px 0 0 200px;
+	background-image: url("../images/bgcover-1.jpg");
+	border-radius: 5px;
+	color: #fff;
+}
+#legacy-index section table tr td:nth-child(2) {
+	width: 200px;
+}
+#legacy-index section table tr td:first-child {
+	text-align: center;
+	border-right: 2px solid #d3d3d3;
+}
+#legacy-index section table tr td {
+	padding: 15px 0;
+}
+#legacy-intro {
+	
+} 
+.tensya-intro {
+	letter-spacing: 0.2em;
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+}
+.legacy-first-tr {
+	border-bottom: 2px solid #d3d3d3;
+}
+/*-----------------------------
+　　 　遠鉄
+------------------------------*/
+#train-sorts {
+	width: 100vw;
+	background-image: url("../images/bgcover-2.jpg");
+	background-size: cover;
+	opacity: 0.8;
+	margin: 0 calc(50% - 50vw);
+	padding-left: 150px;
+}
+#train-sorts section {
+	width: 1200px;
+	margin-left: 0;
+	overflow: hidden;
+}
+#train-sorts section figure {
+	width: 400px;
+	float: left;
+	margin: 0 40px 20px 0;
+	padding: 0;
+}
+#train-sorts section figure img {
+	border-radius: 40px;
+	box-shadow: 4px 4px 4px #d3d3d3;
+}
+#train-sorts section figure figcaption {
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	text-shadow: 2px 2px 2px #fff;
+}
+#train-sorts section p {
+	font-size: 20px;
+	font-style: oblique;
+	letter-spacing: 0.3em;
+	word-spacing: 1em;
+	text-shadow: 2px 2px 2px #fff;
+}
+#train-with-eva {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	padding: 0 120px;
+	overflow: hidden;
+	background-color: #D5D5D5;
+}
+#train-with-eva p {
+	width: 1200px;
+	padding: 0;
+	letter-spacing: 2px;
+}
+#train-with-eva h2 {
+	width: 1200px;
+	text-align: left;
+}
+#train-with-eva figure {
+	width: 350px;
+	margin-left: 10px;
+	float: left;
+}
+#train-with-eva figure img {
+	box-shadow: 3px 3px 3px #fff;
+	border-radius: 10px;
+}
+#train-with-eva figure p {
+	width: 350px;
+	letter-spacing: 0.1em;
+	word-spacing: 1px;
+	text-shadow: 2px 2px 2px #fff;
+}
+#station-info {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	padding-left: 150px;
+	overflow: hidden;
+}
+#station-info figure {
+	float: left;
+	width: 350px;
+	margin: 0 50px 20px 0;	
+}
+/*-----------------------------
+	        footer
+------------------------------*/
+footer {
+	width: 100vw;
+	height: 300px;
+	background-image: url("../images/bgcover-4.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#h-foot-menu {
+	text-shadow: -5px -5px 5px #d3d3d3;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	padding: 10px 0;
+}
+#h-foot-menu ul {
+	float: left;
+	width: 100vw;
+	list-style: none;
+	text-decoration: none;
+	margin: 20px calc(50vw - 50%);
+}
+#h-foot-menu ul li {
+	float: left;
+	width: 240px;
+	text-align: center;
+	text-decoration: none;
+}
+#h-foot-menu .h-social {
+	list-style: none;
+}
+#h-foot-menu .h-social li {
+	float: left;
+	width: 300px;
+	text-align: center;
+	margin: 50px 0 20px 30px;
+	padding: 10px 0;
+	border: 2px solid #ffff00;
+	border-radius: 20px;
+	background-color: #D55658;
+	box-shadow: -2px 2px 2px #fff;
+}
+.h-main-part {
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+	font-weight: bold;
+}
+.h-main-part a:hover {
+	text-decoration: none;
+	background-color: #0000ff;
+	color: #fff;
+	padding: 15px 20px;
+	transition: 0.3s;
+}
+/*-----------------------------
+	responsive site
+-----------------------------*/
+@media screen and (max-width: 500px) {
+	* {
+	float: none;
+	position: static;
+	}
+	img {
+	max-width: 100%;
+	height: auto;
+	}
+}
+	

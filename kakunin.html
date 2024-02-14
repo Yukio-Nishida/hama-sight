@@ -1,0 +1,40 @@
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>投稿専用フォーム</title>
+<link rel="stylesheet" href="css/form-style.css">
+</head>
+<body>
+    <h1>投稿専用フォーム</h1>
+    <h2>投稿いただきありがとうございます。</h2>
+    <form action="kakunin.php" method="post" id="confirm">
+            <input type="hidden" name="name" value="<?php echo $name; ?>">
+            <input type="hidden" name="mail" value="<?php echo $mail; ?>">
+            <input type="hidden" name="sexuality" value="<?php echo $sexuality; ?>">
+            <input type="hidden" name="title" value="<?php echo $title; ?>">
+            <input type="hidden" name="wanting" value="<?php echo $wanting; ?>">
+            <p>送信する投稿内容は、以下の内容でよろしいでしょうか？<br>修正する際は「修正する」ボタンを、内容がよろしければ「送信する」ボタンを押して下さい。</p>
+                <dl>
+                    <dt>お名前</dt>
+                    <dd><p><?php echo $name; ?></p></dd>
+
+                    <dt>メールアドレス</dt>
+                    <dd><p><?php echo $mail; ?></p></dd>
+
+                    <dt>性別</dt>
+                    <dd><p><?php echo $sexuality ?></p></dd>
+
+                    <dt>件名</dt>
+                    <dd><p><?php echo $title; ?></p></dd>
+
+                    <dt>投稿内容</dt>
+                    <dd><p><?php echo nl2br($wanting); ?></p></dd>
+                </dl>
+                <p id="sending">
+        <input type="button" id="back-button" value="修正する" onclick="location.href='h-wanted.html'">
+        <button type="submit" id="next-button" name="submit">送信する</button>
+</p>
+    </form>
+</div>
+</body>
+</html>

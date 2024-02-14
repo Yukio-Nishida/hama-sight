@@ -1,0 +1,333 @@
+@charset "utf-8";
+body {
+    width: 100vw;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+#h-navi li a:visited,
+#breadcrumb ol li a:visited,
+#h-foot-menu li a:visited {
+	color: inherit;
+}
+header {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+header h1 {
+	float: left;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+header h1 img {
+	width: 300px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+header #social {
+	float: right;
+	margin-top: 50px;
+	
+}
+.sns-intro {
+	text-align: left;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-size: 15px;
+	text-shadow: 2px 2px 2px #00ff00;
+}
+header #social ul {
+	float: right;
+	margin-top: 10px;
+	padding: 0;
+}
+header #social ul li {
+	float: right;
+	padding: 0;
+	list-style: none;
+}
+/*-----------------------------
+	g-navi
+------------------------------*/
+#h-main-pages {
+	width: 100vw;
+	margin: 0 auto;
+	text-align: center;
+}
+#h-navi {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	padding: 25px;
+	border: 2px solid #fff;
+	background-image: url(../images/bgcover-3.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+#h-navi li {
+	float: left;
+	width: 200px;
+	border-left: 2px solid #ff0000;
+	list-style: none;
+}
+#h-navi li:first-child {
+	margin-left: 110px;
+}
+#h-navi li:last-child {
+	border-right: 2px solid #ff0000;
+}
+#h-navi li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+    font-size: 25px;
+}
+#h-navi li a:hover {
+	color: #fff;
+	background-color: #0000ff;
+	border: 1px solid #fff;
+	border-radius: 60%;
+	transition: 0.3s;
+	padding: 10px;
+	box-shadow: -3px -3px 3px #d5d5d5;
+}
+/*------------------------------
+  ヘッダー画像のストリーミング
+------------------------------*/
+#head-move {
+	position: relative;
+	width: 100vw;
+	height: 480px;
+	background-color: #E3D0D1;
+	overflow: hidden;
+	}
+#head-move img {
+	width: 1100px;
+	height: 480px;
+	margin-left: 60px;
+}
+#head-move .head-words {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%; 
+	height: 100%;
+	font-weight: lighter;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+	text-shadow: -2px 2px 2px #d5d5d5,  2px 2px 2px #d5d5d5;
+}
+/*------------------------------
+  パンくずリスト
+------------------------------*/
+#breadcrumb { 
+	width: 100vw;
+	background-color: #00ff00;
+	font-weight: bolder;
+	text-shadow: 5px 5px 2px #d3d3d3;
+	margin: 0 cal(50% - 50vw);
+	list-style: none;
+    padding: 5px 0 5px 80px;
+}
+#breadcrumb ol li {
+    display: inline; 
+}
+#breadcrumb ol li::after {
+    content: ">";
+    padding-left: 8px;
+}
+#breadcrumb ol li:last-child::after { 
+    content: none;
+}
+/*-----------------------------
+　　　タイトルバーの表示設定
+------------------------------*/
+.index-title,
+.info-intro {
+	padding: 0 80px;
+}
+.index-name {
+	width: 100vw;
+	border: 2px solid #fff;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+	text-shadow: 3px 3px 3px #f5f5f5,  -3px -3px 3px #f5f5f5;
+	padding: 20px 0 20px 80px;
+	margin: 0 cal(50% - 50vw);
+	background: linear-gradient(45deg, #66ccff, #ffff99, #00ff99);
+	background-size: 200% 200%;
+	animation: bggradient 10s ease infinite;
+}
+@keyframes bggradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*-----------------------------
+　　 　浜松まつり
+------------------------------*/
+#h-fes-area {
+	width: 100vw;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#h-fes-area p {
+	padding: 0 80px;
+	word-spacing: 0.5px;
+}
+#fes-event {
+	width: 100vw;
+	height: auto;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.fes-detail {
+	padding-left: 80px;
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+	text-shadow: 2px 2px 2px #d5d5d5;
+	letter-spacing: 0.3em;
+}
+.fes-title {
+	padding-top: 10px;
+	padding-left: 80px;
+	font-weight: bolder;
+	text-shadow: 5px 5px 5px #d5d5d5;
+}
+.fes-keyword {
+	padding: 0 10px;
+	color: #ff0000;
+}
+#kite-area p,
+#yatai-area p {
+	width: 800px;
+	font-style: oblique;
+	text-shadow: 2px 2px 2px #d5d5d5;
+	letter-spacing: 0.2em;
+}
+#kite-area {
+	content: '';
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/h-kite01.JPG");
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding-top: 10px;
+	overflow: hidden;
+}
+#kite-collection {
+	width: 100vw;
+	height: 100vh;
+	background-color: #A9EAE6;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#kite-picture {
+	width: 1400px;
+	margin: 0;
+	padding: 0;
+}
+#kite-picture li:first-child,
+#kite-picture li:nth-child(4) {
+	margin-left: 80px;
+}
+#kite-picture li {
+	float: left;
+	width: 400px;
+	list-style: none;
+	margin-bottom: 40px;
+	margin-right: 30px;
+}
+#kite-picture li img {
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #d5d5d5;
+}
+#yatai-collection {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/h-yatai01.jpg");
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+/*-----------------------------
+	        footer
+------------------------------*/
+footer {
+	width: 100vw;
+	height: 300px;
+	background-image: url("../images/bgcover-4.jpg");
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+#h-foot-menu {
+	text-shadow: -5px -5px 5px #d3d3d3;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	padding: 10px 0;
+}
+#h-foot-menu ul {
+	float: left;
+	width: 100vw;
+	list-style: none;
+	text-decoration: none;
+	margin: 20px calc(50vw - 50%);
+}
+#h-foot-menu ul li {
+	float: left;
+	width: 240px;
+	text-align: center;
+	text-decoration: none;
+}
+#h-foot-menu .h-social {
+	list-style: none;
+}
+#h-foot-menu .h-social li {
+	float: left;
+	width: 300px;
+	text-align: center;
+	margin: 50px 0 20px 30px;
+	padding: 10px 0;
+	border: 2px solid #ffff00;
+	border-radius: 20px;
+	background-color: #D55658;
+	box-shadow: -2px 2px 2px #fff;
+}
+.h-main-part {
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+	font-weight: bold;
+}
+.h-main-part a:hover {
+	text-decoration: none;
+	background-color: #b7a077;
+	color: #fff;
+	padding: 15px 20px;
+	border-radius: 10px;
+	transition: 0.3s linear;
+}
+/*-----------------------------
+	responsive site
+-----------------------------*/
+@media screen and (max-width: 800px) {
+	img {
+		max-width: 100%;
+	}
+}

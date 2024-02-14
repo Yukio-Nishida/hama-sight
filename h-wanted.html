@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<link rel="stylesheet" href="css/style.css">
+<title>やらまいか、遠州のど真ん中で！</title>
+</head>
+<body>
+	
+<header>
+</header>
+	
+		 <div id="h-contents">
+			<h2 class="index-name">コレクターボックス</h2>
+			 <p>浜松には他にも隠れた観光名所、耳寄り情報、名店等が数多くあるはずです。<br>
+					   ここではそんな隠れた浜松の魅力を掘り下げるべく、皆様からの投稿を募っています。<br>
+					   いただいた情報は出来るだけご紹介する方向ですので、「これは！」と思えるものをどしどしお送りください。</p>
+			 <form id="wanted-box" action="kakunin.php" method="post" name="box" onSubmit="return validate()">			
+				   <p>内容をすべて入力の上、確認ボタンを押してください。<br>
+					   なおすべて入力必須の項目となっておりますので、入力漏れのないようにお願いいたします。</p>
+				 <dl>
+					 <dt><label>お名前&nbsp;&nbsp;name</label></dt>
+					 <dd><input type="text" class="enter" name="name" placeholder="例）山田太郎" required></dd>
+                     <dt><label>メールアドレス&nbsp;&nbsp;mail</label></dt>
+                     <dd><input type="text" class="enter" name="mail" placeholder="例）guest@example.com" required></dd>
+					 <dt><label>性別&nbsp;&nbsp;sexality</label></dt>
+					 <dd>
+						 <input type="radio" name="sexuality" value="男性" checked required>男性
+						 <input type="radio" name="sexuality" value="女性">女性
+						 </dd>
+					 <dt><label>件名&nbsp;&nbsp;title</label></dt>
+					 <dd>
+						 <select name="title" class="selection" required>
+							 <option value="">件名を選択してください</option>
+							 <option value="観光地">観光地</option>
+							 <option value="料理・土産">料理・土産</option>
+							 <option value="イベント">イベント</option>
+							 <option value="その他">その他</option>
+						 </select>
+						 </dd>
+                <dt><label>投稿内容&nbsp;&nbsp;infomation</label></dt>
+                <dd><textarea id="index" name="wanting" class="send-index" placeholder="投稿内容をご入力ください。" required></textarea></dd>
+					 </dl>
+				 <p id="submit-corner">
+				 <button type="submit" id="confirm">確認画面へ</button>
+				 </p>
+            
+	</form>
+	</div>
+			
+		 </body>
+		 </html>

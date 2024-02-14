@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
+<title>モノづくりと自然に溢れた町・浜松を大解剖</title>
+</head>
+	
+	<!-----文字のアニメーション開始----->
+	<div id="fading">
+    <div id="fading-part">
+		<p class="fade-text">Welcome to Hama-sight</p>
+    </div>
+  </div>
+	
+	<style type="text/css">
+		#fading {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			background-image: url("images/Ieyasu.jpg");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			text-align: center;
+			font-weight: bolder;
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 50px;
+			color: #fff;
+		}
+		/* Loading画像中央配置　*/
+		#fading-part {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		/* fadeUpをするアイコンの動き */
+		.fade-text {
+			animation-name: fadeUpAnime;
+			animation-duration: 5.0s;
+			animation-fill-mode: forwards;
+			opacity: 0;
+		}
+		@keyframes fadeUpAnime{
+			from {
+				opacity: 0;
+				transform: translateY(100px);
+			}
+			50% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			to {
+				opacity: 0;
+				transform: translateY(-100px);
+			}}
+		</style>
+	
+	<script type="text/javascript">
+		$(window).on('load',function(){
+			$("#fading").delay(8000).fadeOut('slow');
+			$("#fading-part").delay(8000).fadeOut('slow');
+		});
+		</script>
+		<!-----文字のアニメーション終了----->
+	<body>
+	<!-----ロゴとSNS----->
+<header>
+		<h1 class="h-logo"><img src="images/H-logo.jpg"></h1>
+	</header>
+	<div id="h-main-pages">
+		<!-----ヘッダー画像----->
+		<div id="head-move">
+			<ul class="fade-images">
+				<li><img src="images/h-city-view.jpg"></li>
+				<li><img src="images/castle-view.jpg"></li>
+				<li><img src="images/h-industry.jpg"></li>
+				<li><img src="images/h-food.jpg"></li>
+			</ul>
+			<p class="head-words">
+			歴史とモノづくり、自然と共生する街・浜松市
+			</p>
+		</div>
+		<style type="text/css">
+		.fade-images {
+			position: relative;
+			overflow: hidden;
+			width: 100vw;
+			height: 500px;
+			padding: 0;
+			margin: 0;
+		}
+		.fade-images li {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			opacity: 0;
+			animation: bgAnime 32s infinite;   /* 4画像 × 各8s = 32s */
+		}
+		/* --- 段差で背景画像のアニメーションを実行 ----------------- */
+		.fade-images li:nth-child(2) {
+			animation-delay  : 8s;
+		}
+		.fade-images li:nth-child(3) {
+			animation-delay  : 16s;
+		}
+		.fade-images li:nth-child(4) {
+			animation-delay  : 24s;
+		}
+			
+			@keyframes bgAnime {
+	0% { opacity: 0; transform: scale(1.0, 1.0); }
+	5% { opacity: 1; transform: scale(1.0, 1.0); }
+	10% { opacity: 1; transform: scale(1.0, 1.0); }
+	15% { opacity: 1; transform: scale(1.0, 1.0); }
+	20% { opacity: 1; transform: scale(1.0, 1.0); }
+	25% { opacity: 0; }
+	100% { opacity: 0; }
+			}
+		</style>
+		
+		<!-----Gナビゲーション----->
+		<ul id="h-navi">
+			<li><a href="h-product.html">作る浜松</a></li>
+			<li><a href="h-event.html">魅せる浜松</a></li>
+			<li><a href="h-eating.html">食べる浜松</a></li>
+			<li><a href="h-sightseeing.html">観る浜松</a></li>
+			<li><a href="h-sports.html">スポーツの浜松</a></li>
+			<li><a href="h-traffic.html">走る浜松</a></li>
+		</ul>
+	</div>
+
+	<div id="h-contents">
+					<p id="top-return">
+                            <a href="#gn_p">↑</a>
+                        </p>
+            
+                        <style type="text/css">
+                        
+                        #top-return {
+							text-align: center;
+							position: fixed;
+                            bottom: 15px;
+                            right: 15px;
+                            font-size: 30px;
+							background-color: #F5E0E0;
+                        }
+                        #top-return a {
+							box-shadow: 2px 2px 2px #0000ff;
+                            display: block;
+							border: 1px solid #000;
+							width: 60px;
+							height: 40px;
+							text-decoration-line: none;
+                            }
+                        #top-return a:hover {
+							transition: 0.3s;
+							cursor: pointer;
+						}
+			 </style>
+    
+                        <script type="text/javascript">
+                        $(function(){
+                            var pagetop = $('#top-return');
+                            pagetop.hide();
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    pagetop.fadeIn();
+                                } else {
+                                    pagetop.fadeOut();
+                                }
+                            });
+                            pagetop.click(function () {
+                                $('body, html').animate({ scrollTop: 0 }, 10);
+                                return false;
+                            });
+                        });
+                        </script>
+			 
+			<div id="H-news">
+		 </div>
+	</div>
+		 </body>
+		 <footer>
+			<nav id="h-foot-menu">
+				<ul class="h-main-part">
+					<li><a href="h-product.html">作る浜松</a></li>
+					<li><a href="h-event.html">魅せる浜松</a></li>
+					<li><a href="h-eating.html">食べる浜松</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li><a href="h-sports.html">スポーツの浜松</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+				</ul>
+				<ul class="h-social">
+					<li><img src="images/insta-mark.gif"><a href="#">hamatour</a></li>
+					<li><img src="images/fb-mark.gif"><a href="#">hamatour-meta</a></li>
+				</ul>
+			</nav>
+		 </footer>
+</html>

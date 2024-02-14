@@ -1,0 +1,353 @@
+@charset "utf-8";
+body {
+    width: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+#h-navi li a:visited,
+#breadcrumb ol li a:visited　{
+	color: inherit;
+}
+p {
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
+	letter-spacing: 0.1em;
+}
+header {
+    width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	text-align: center;
+}
+/*-----------------------------
+	g-navi
+------------------------------*/
+#h-main-pages {
+	width: 100vw;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+#h-navi {
+	overflow: hidden;
+	border: 2px solid #fff;
+	background-image: url(../images/bgcover-3.jpg);
+	background-position: center;
+	background-size: cover;
+	margin: 0 calc(50% - 50vw);
+	width: 100vw;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 70px;
+}
+#h-navi li {
+	float: left;
+	width: 200px;
+	border-left: 2px solid #ff0000;
+	list-style: none;
+}
+#h-navi li:last-child {
+	border-right: 2px solid #ff0000;
+}
+#h-navi li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+    font-size: 25px;
+}
+#h-navi li a:hover {
+	color: #fff;
+	background-color: #0000ff;
+	border: 1px solid #fff;
+	border-radius: 60%;
+	transition: 0.3s;
+	padding: 10px;
+	box-shadow: -3px -3px 3px #d5d5d5;
+}
+/*------------------------------
+  パンくずリスト
+------------------------------*/
+#breadcrumb { 
+	width: 100vw;
+	background-color: #00ff00;
+	font-weight: bolder;
+	text-shadow: 5px 5px 2px #d3d3d3;
+	margin: 0 cal(50% - 50vw);
+	list-style: none;
+    padding: 5px 0 5px 20px ;
+}
+#breadcrumb ol li {
+    display: inline; 
+}
+#breadcrumb ol li::after {
+    content: ">";
+    padding-left: 8px;
+}
+#breadcrumb ol li:last-child::after { 
+    content: none;
+}
+/*------------------------------
+  チームコンテンツ
+------------------------------*/
+#sports-index {
+	width: 100vw;
+	margin: 0 cal(50% - 50vw);
+	background: #fffbe6;
+}
+#bresu-detail,
+#fenix-detail,
+#Honda-detail {
+	width: 1200px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+.team-panel {
+	width: 700px;
+	padding: 0 0 5px 10px;
+	border-left: 1px solid #2692ED;
+	border-bottom: 2px solid #2692ED;
+	text-shadow: 4px 4px 4px #d5d5d5;
+}
+/*------------------------------
+  チームタイトル
+------------------------------*/
+.index-name {
+	width: 100vw;
+	border: 2px solid #fff;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+	text-shadow: 3px 3px 3px #f5f5f5,  -3px -3px 3px #f5f5f5;
+	padding: 20px 0 20px 50px;
+	margin: 0 cal(50% - 50vw);
+	background: linear-gradient(45deg, #66ccff, #ffff99, #00ff99);
+	background-size: 200% 200%;
+	animation: bggradient 10s ease infinite;
+}
+@keyframes bggradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*------------------------------
+    ブレス浜松
+------------------------------*/
+.bresu-policy {
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+ol {
+	width: 100vw;
+	margin: 10px 0; 
+	text-align: left;
+	letter-spacing: 0.1em;
+}
+ol li {
+	margin-bottom: 30px;
+}
+.mascot-data {
+	width: 500px;
+	text-align: center;
+	box-shadow: 15px 15px 15px #d5d5d5; 
+	border-color: #ffff00;
+}
+.mascot-data tr:first-child,
+.mascot-data tr:nth-child(3) {
+	background-color: #07D1F8;
+}
+.mascot-data tr td {
+	padding: 40px 0;
+}
+.mascot-data tr td:first-child {
+	width: 150px;
+	font-weight: bolder;
+}
+#Arena-photo {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+}
+#Arena-photo figure {
+	width: 450px;
+	float: left;
+	margin-left: 100px;
+}
+#Arena-photo figure img {
+	box-shadow: 5px 5px 5px #d5d5d5;
+}
+#Arena-photo figure figcaption {
+	text-align: center;
+	letter-spacing: 0.1em;
+	font-size: 20px;
+	font-weight: bolder;
+	text-shadow: 2px 2px 2px #008000;
+}
+.team-image {
+	width: 400px;
+	border: 2px solid #000;
+	border-radius: 20px;
+	letter-spacing: 0.2em;
+	padding: 10px 0;
+	text-align: center;
+	text-shadow: 2px 2px 2px #008000;
+}
+#staff-players {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+}
+#staff-players ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#bresu-crew ul {
+	display: flex;
+	width: 1200px;
+	margin: 20px 0;
+	padding: 0;
+}
+#bresu-crew ul li {
+	width: 296px;
+	margin-right: 150px;
+	border:2px solid #000;
+	text-align: center;
+	border-radius: 5px;
+	padding: 5px 0;
+	background-color: #87ceeb;
+	color: #fff;
+	box-shadow: 2px 2px 2px #d5d5d5;
+}
+#bresu-crew ul li:first-child {
+	margin-left: 150px;
+}
+.crew-detail {
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "sans-serif";
+	letter-spacing: 0.2em;
+}
+.crew-detail a {
+	color: #000;
+	text-decoration: none;
+}
+.crew-detail a:hover {
+	color: #fff;
+}
+.crew-detail:hover {
+	background: linear-gradient(45deg, #98fb98, #87cefa);
+	animation: bggradient 0.2s ease infinite;
+}
+/*------------------------------
+    三遠ネオフェニックス
+------------------------------*/
+.fenix-reason {
+	font-size: 50px;
+	text-align: center;
+	color: #ff0000;
+	font-weight: bold;
+	text-shadow: 12px 2px 2px #d5d5d5;
+}
+.fenix-policy {
+	font-family: "HG行書体", monospace;
+	font-size: 150px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	text-shadow: 12px 2px 2px #d5d5d5;
+}
+.red {
+	color: #ff0000;
+	font-style: oblique;
+}
+.blue {
+	color: #0000ff;
+}
+.logo {
+	margin-left: 200px;
+	box-shadow: 10px 10px 10px #d5d5d5;  
+}
+#fenix-mascot {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+}
+#fenix-mascot section {
+	float: left;
+	width: 450px;
+	margin-left: 150px;
+	overflow: hidden;
+}
+#fenix-mascot section figure figcaption {
+	text-align: center;
+	margin: 10px 0 20px 0;
+	font-weight: bolder;
+	text-shadow: 2px 2px 2px #d3d3d3;
+	letter-spacing: 0.1em;
+}
+/*------------------------------
+    Honda FC
+------------------------------*/
+#Honda-first-period {
+	width: 1000px;
+	padding: 0;
+	margin: 30px 0 30px 0;
+	box-shadow: 2px 2px 2px #7cfc00;
+}
+#Honda-first-period tr:nth-child(2n) {
+	background-color: #adff2f ;
+}
+#Honda-first-period tr td:first-child {
+	font-weight: bold;
+	padding: 20px;
+	margin: 0;
+}
+#Honda-first-period tr td:nth-child(2) {
+	text-shadow: 1px 1px 1px #d5d5d5;
+	padding-left: 20px;
+	letter-spacing: 0.1em;
+}
+#Honda-views {
+	width: 1000px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#left-view, #right-view {
+	width: 1000px;
+	margin-bottom: 40px;
+	padding-left: 50px;
+	overflow: hidden;
+}
+#left-view figure img {
+	float: left;
+	width: 350px;
+	margin-right: 40px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+}
+#left-view p {
+	float: right;
+	width: 500px;
+	margin-right: 40px;
+	padding-top: 20px;
+	letter-spacing: 0.3em;
+	word-spacing: 0.3em;
+}
+#right-view p {
+	width: 500px;
+	float: left;
+	margin-right: 40px;
+	padding-top: 20px;
+	letter-spacing: 0.3em;
+	word-spacing: 0.3em;
+}
+#right-view figure img {
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+}

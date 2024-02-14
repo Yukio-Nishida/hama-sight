@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<link rel="stylesheet" href="css/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<title>自然豊かな味を体感しよう</title>
+</head>
+<body>
+<header>
+	<h1 class="h-logo"><img src="images/H-logo.jpg"></h1>
+</header>
+	<div id="h-main-pages">
+		<ul id="h-navi">
+			<li><a href="h-product.html">作る浜松</a></li>
+			<li><a href="h-event.html">魅せる浜松</a></li>
+			<li><a href="h-eating.html">食べる浜松</a></li>
+			<li><a href="h-sightseeing.html">観る浜松</a></li>
+			<li><a href="h-sports.html">スポーツの浜松</a></li>
+			<li><a href="h-traffic.html">走る浜松</a></li>
+		</ul>
+	</div>
+			<!--------パンくずリスト-------->
+			<div id="breadcrumb">
+				<ol>
+					<li><a href="top.html">トップページ</a></li>
+					<li>スポーツの浜松</li>
+				</ol>
+				</div>
+				<div id="h-contents">
+					<p id="top-return">
+                            <a href="#gn_p">↑</a>
+                        </p>
+            
+                        <style type="text/css">
+                        
+                        #top-return {
+							text-align: center;
+							position: fixed;
+                            bottom: 15px;
+                            right: 15px;
+                            font-size: 30px;
+							background-color: #F5E0E0;
+                        }
+                        #top-return a {
+							box-shadow: 2px 2px 2px #0000ff;
+                            display: block;
+							border: 1px solid #000;
+							width: 60px;
+							height: 40px;
+							text-decoration-line: none;
+                            }
+                        #top-return a:hover {
+							transition: 0.3s;
+							cursor: pointer;
+						}
+			 </style>
+    
+                        <script type="text/javascript">
+                        $(function(){
+                            var pagetop = $('#top-return');
+                            pagetop.hide();
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    pagetop.fadeIn();
+                                } else {
+                                    pagetop.fadeOut();
+                                }
+                            });
+                            pagetop.click(function () {
+                                $('body, html').animate({ scrollTop: 0 }, 10);
+                                return false;
+                            });
+                        });
+                        </script>
+			<!--------スポーツ情報-------->
+			<p class="info-intro">今やスポーツは週末の楽しみであり、地域活性化あるいは町おこしの一環としても注目されるジャンルです。<br>野球やサッカーのメジャー競技を筆頭に、バレーボール(V1リーグ)やバスケットボール(Bリーグ)など中心にチームと地域が一体となって成長する風景はこのジャンルの醍醐味!
+				<br><br>
+			ここ浜松にも女子バレーボールの<span class="sports-name">ブレス浜松</span>や男子バスケットボールの<span class="sports-name">三遠ネオフェニックス</span>など、地域一体となって活躍しているスポーツチームがありますが、彼らと地域がどのように繋がり歴史を紡いだか見ていきましょう。</p>
+					<section id="h-variety-corner">
+						<section id="variety-intro">
+							<h2 class="index-name">ブレス浜松</h2>
+							<figure><img src="images/volleyball1.jpg" width="450" height="338">
+								<p class="right-explane">ブレス浜松は将来のV１リーグ昇格と優勝を目指す子バレーボールクラブです。<br>
+									現在は２部に相当するV2リーグに所属する同チームですが、彼女たちのスタートは企業チームならではの苦労が原点です・・・<a href="bresu-index.html">(続きを見る)</a></p>
+							</figure>
+						</section>
+						
+						<section id="variety-intro">
+							<h2 class="index-name">三遠ネオフェニックス</h2>
+							<figure><img src="images/basketball.jpg" width="450" height="338">
+								<p class="right-explane">三遠ネオフェニックスはバスケットボールの国内最高峰のBリーグに所属しています。Bリーグ発足前は、bjリーグの浜松・東三河フェニックスで活躍、当時から浜松市と愛知県豊橋市を拠点としており・・・<a href="neo-fenix-index.html">(続きを見る)</a></p>
+							</figure>
+						</section>
+						
+						<section id="variety-intro">
+							<h2 class="index-name">Honda FC</h2>
+							<figure><img src="images/soccer.jpg" width="450" height="338">
+								<p class="right-explane">Honda FCは日本フットボールリーグ(JFL)に所属する社会人サッカークラブです。かつては、Jリーグ加盟も目指していた彼らは働きながらサッカーに勤しみ、天皇杯ではJリーグ勢を破るジャイアントキリングも達成・・・<a href="Honda-FC.html">(続きを見る)</a></p>
+							</figure>
+						</section>
+						
+						<section id="variety-intro">
+							<h2 class="index-name">アグレミーナ浜松</h2>
+							<figure><img src="images/footsal.jpg" width="450" height="338">
+								<p class="right-explane">アグレミーナ浜松は、日本フットサルプロリーグ(Fリーグ)に所属しているプロのフットサルチームです。始まりは、磐田市田原地区にて元Jリーガーたちが中心となり2002年に立ち上げた田原フットサルクラブで・・・<a href="aguremina-index">(続きを見る)</a></p>
+							</figure>
+						</section>
+
+					</section>
+	</div>
+	</body>
+<footer>
+			<nav id="h-foot-menu">
+				<ul class="h-main-part">
+					<li><a href="h-product.html">作る浜松</a></li>
+					<li><a href="h-event.html">魅せる浜松</a></li>
+					<li><a href="h-eating.html">食べる浜松</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li><a href="h-sports.html">スポーツの浜松</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+				</ul>
+				<ul class="h-social">
+					<li><img src="images/insta-mark.gif"><a href="#">hamatour</a></li>
+					<li><img src="images/fb-mark.gif"><a href="#">hamatour-meta</a></li>
+				</ul>
+			</nav>
+		 </footer>
+</html>

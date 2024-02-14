@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+/*------------------------------
+  パンくずリスト
+------------------------------*/
+#breadcrumb { 
+	width: 100vw;
+	background-color: #00ff00;
+	font-weight: bolder;
+	text-shadow: 5px 5px 2px #d3d3d3;
+	margin: 0 cal(50% - 50vw);
+	list-style: none;
+    padding: 5px 0 5px 90px ;
+}
+#breadcrumb ol li {
+    display: inline; 
+}
+#breadcrumb ol li::after {
+    content: ">";
+    padding-left: 8px;
+}
+#breadcrumb ol li:last-child::after { 
+    content: none;
+}
+/*------------------------------
+  蒲焼きコンテンツ
+------------------------------*/
+#Unagi-head {
+	width: 100vw;
+	height: 80vh;
+	margin: 0 calc(50vw - 50%);
+	padding: 0;
+	overflow: hidden;
+}
+#Unagi-head img {
+	width: 100vw;
+	padding: 0;
+	position: relative;
+	background-size: cover;
+	overflow: hidden;
+}
+#h-unagi-page {
+	width: 100vw;
+	background: #f5deb3;
+	position: relative;
+	background-size: cover;
+	overflow: hidden;
+}
+#Unagi-info {
+	width: 1200px;
+	margin: 30px auto 30px 100px;
+	padding: 0;
+	overflow: hidden;
+}
+.kabayaki-main {
+	width: 800px;
+	border-left: 5px solid #FFFF00;
+	border-bottom: 2px solid #FFFF00;
+	text-shadow: 2px 2px 2px #fff;
+	letter-spacing: 0.3em;
+	padding: 0 0 5px 5px;
+}
+.kabayaki-sub {
+	width: 600px;
+	text-shadow: 2px 2px 2px #fff;
+	letter-spacing: 0.3em;
+	font-family: "HG行書体", monospace;
+	border: 2px solid #ffff00;
+	padding: 5px 0 5px 5px;
+}
+.float {
+	border-radius: 40px;
+}
+#Unagi-taste figure figcaption {
+	text-align: center;
+	text-shadow: 2px 2px 2px #ff0000;
+}
+.store-table {
+	box-shadow: 2px 2px 2px #13F027;
+}
+.title {
+	text-align: center;
+	text-shadow: 2px 2px 2px #d3d3d3;
+	letter-spacing: 1em;
+	background: #13F027;
+	font-weight: bolder;
+}
+.store-table tr td:not(.title) {
+	background-color: #F2D082;
+	line-height: 30px;
+}
+.store-table tr td {
+	padding: 15px 0;
+}
+/*------------------------------
+  　　　浜松餃子コンテンツ
+------------------------------*/
+#Gyoza-head {
+	width: 100vw;
+	height: 80vh;
+	margin: 0 calc(50vw - 50%);
+	padding: 0;
+	overflow: hidden;
+}
+#Gyoza-head img {
+	width: 100vw;
+	padding: 0;
+	position: relative;
+	background-size: cover;
+	overflow: hidden;
+}
+#h-gyoza-page {
+	width: 100vw;
+	background: #f5deb3;
+	position: relative;
+	background-size: cover;
+	overflow: hidden;
+}
+#h-gyoza-info {
+	width: 1200px;
+	margin: 30px auto 30px 100px;
+	padding: 0;
+	overflow: hidden;
+}
+.gyoza-main {
+	width: 800px;
+	border-left: 5px solid #FFFF00;
+	border-bottom: 2px solid #FFFF00;
+	text-shadow: 2px 2px 2px #fff;
+	letter-spacing: 0.3em;
+	padding: 0 0 5px 5px;
+}

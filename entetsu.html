@@ -1,0 +1,499 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<script src="https://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/style.css">
+<title>赤電の生き様を覗こう!</title>
+</head>
+<body>
+	
+<header>
+		<h1 class="h-logo"><img src="images/H-logo.jpg"></h1>
+		<div id="social">
+			<p class="sns-intro">SNSで浜松市を探索しよう</p>
+			<ul>
+				<li><a href=""><img src="images/insta-mark.gif">hamatour</a></li>
+				<li><a href=""><img src="images/fb-mark.gif">hamatour-meta</a></li>
+			</ul>
+		</div>
+</header>
+	<div id="h-main-pages">
+		<ul id="h-navi">
+			<li><a href="h-product.html">作る浜松</a></li>
+			<li><a href="h-event.html">魅せる浜松</a></li>
+			<li><a href="h-eating.html">食べる浜松</a></li>
+			<li><a href="h-sightseeing.html">観る浜松</a></li>
+			<li><a href="h-sports.html">スポーツの浜松</a></li>
+			<li><a href="h-traffic.html">走る浜松</a></li>
+		</ul>
+	</div>
+			<!--------パンくずリスト-------->
+			<div id="breadcrumb">
+				<ol>
+					<li><a href="top.html">トップページ</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+                    <li>遠州鉄道</li>
+				</ol>
+				</div>
+					
+	<!--------遠州鉄道の概要-------->
+	<h1 class="index-name">遠州鉄道</h1>
+	<div id="traffics">
+		<p id="top-return">
+                            <a href="#gn_p">↑</a>
+                        </p>
+            
+                        <style type="text/css">
+                        
+                        #top-return {
+							text-align: center;
+							position: fixed;
+                            bottom: 15px;
+                            right: 15px;
+                            font-size: 30px;
+							background-color: #F5E0E0;
+                        }
+                        #top-return a {
+							box-shadow: 2px 2px 2px #0000ff;
+                            display: block;
+							border: 1px solid #000;
+							width: 60px;
+							height: 40px;
+							text-decoration-line: none;
+                            }
+                        #top-return a:hover {
+							transition: 0.3s;
+							cursor: pointer;
+						}
+			 </style>
+    
+                        <script type="text/javascript">
+                        $(function(){
+                            var pagetop = $('#top-return');
+                            pagetop.hide();
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    pagetop.fadeIn();
+                                } else {
+                                    pagetop.fadeOut();
+                                }
+                            });
+                            pagetop.click(function () {
+                                $('body, html').animate({ scrollTop: 0 }, 10);
+                                return false;
+                            });
+                        });
+                        </script>
+            <p class="h-intro">
+                西鹿島&nbsp;～&nbsp;新浜松間を南北に縦断するように走る遠鉄電車!<br>
+				御存知の通り、赤色の外観から<span class="color">赤電</span>と呼ばれていますが、最近では青や黄・緑が３色も加わり、すべてが地元企業とのタイアップで、地域貢献の特徴を打ち出していますね。さらに天浜線同様に展開中のエヴァンゲリオンとのコラボ、さぎの宮駅が舞台のホラー映画「きさらぎ駅」など多方面で注目されています。
+            </p>
+		<!--------形態の紹介-------->
+            <section id="train-sorts">
+                <h2 class="flip-title">赤電を彩った列車たち</h2>
+				<p class="flip-intro">どんな列車が遠鉄の歴史を作ったのか、それを各列車の紹介を通して伝えていきます。</p>
+				<section id="left-view">
+                    <figure class="flip-images">
+						<img src="images/30kei.jpg" width="400" height="300">
+                    <figcaption class="flip-title">30系</figcaption>
+						</figure>
+				<p class="right-explane">1958～1980年まで合計28両が新製された、角丸の車両の先頭部分が印象的な30系は赤電の先駆者的存在。<br>
+				1000形、2000形が出てくるまで赤電を支えていましたが、1980年から廃車対応となり、2018年4月にラストランを迎えることになりました。
+				現役時代には、珍しい片開きドアがあることでも注目され、多くの鉄道ファンの記憶に残っている車両でした。</p>
+                </section>
+				<section id="right-view">
+					<p class="left-explane">
+					現在の赤電の主力を担う2000形は、1999年から運用されている車両です。
+					<br>
+					同タイプの車両で1000形がありますが、制御装置や客用扉窓の固定支持方式のなど細部の違いで差別されています。
+					<br>
+					ちなみに、この<span class="tr-emp">2000</span>の意味は「21世紀に向けての新型高性能電車」で近未来型の車両として高性能
+					を備えており、通勤型電車として役割があります。
+					</p>
+                    <figure>
+						<img src="images/2000kei.jpg" width="400" height="300" class="flip-images">
+                    <figcaption class="flip-title">2000系</figcaption>
+				</figure>
+                </section>
+					</section>
+		
+		<style type="text/css">
+			.left-explane {
+				transition: 1.5s ease-in-out;
+				transform: translateY(150px);
+				opacity: 0;
+			}
+			.left-explane.on {
+				transform: translateY(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.left-explane');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+		<style type="text/css">
+			.right-explane {
+				transition: 1.5s ease-in-out;
+				transform: translateX(150px);
+				opacity: 0;
+			}
+			.right-explane.on {
+				transform: translateX(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.right-explane');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+		<!--------人類乗車計画-------->
+					<section id="train-with-eva">
+						<h2 class="flip-title">エヴァンゲリオン特集</h2>
+						<p class="flip-intro">
+							遠州鉄道では、1997年の放送開始以来で社会現象になった「新世紀エヴァンゲリオン」とのコラボの企画でラッピング電車を発進させています。
+							<br>
+							これは天浜線の天竜二俣駅（車両基地）が映画『シン・エヴァンゲリオン劇場版』に登場する「第3村」のモデル地の1つとなり、そこで市が観光誘致を目的とした取り組みを企画しました。その一環として、天浜線と遠州鉄道でラッピング電車を導入させ「人類乗車計画」を展開することがありました。
+						</p>
+						<figure>
+						<img src="images/Eva-2000-2.jpg" width="350" height="250" class="flip-images">
+							<p class="flip-title">力強い女性を連想させる惣流アスカアングレー</p>
+						</figure>
+						<figure>
+						<img src="images/Eva-2000-3.jpg" width="350" height="250" class="flip-images">
+							<p class="flip-title">弐号機がデザインされ、迫力を感じさせる壁面</p>
+						</figure>
+						<figure>
+						<img src="images/Eva-2000-4.jpg" width="350" height="250" class="flip-images">
+							<p class="flip-title">赤色の壁面を通して、パッションを感じさせる車両</p>
+							 </figure>
+						<figure>
+						<img src="images/Eva-2000-5.JPG" width="350" height="250" class="flip-images">
+							<p class="flip-title">８号機の顔がデザインされた先頭車両</p>
+						</figure>
+						<figure>
+						<img src="images/Eva-2000-6.jpg" width="350" height="250" class="flip-images">
+							<p class="flip-title">揃い踏みの真希波・マリ・イラストリアスと８号機</p>
+						</figure>
+						<figure>
+						<img src="images/Eva-2000-7.jpg" width="350" height="250" class="flip-images">
+							<p class="flip-title">全面ピンクで艶やかさを印象付ける壁面</p>
+							 </figure>
+					</section>
+		
+		<style type="text/css">
+			.left-explane {
+				transition: 1.5s ease-in-out;
+				transform: translateX(-150px);
+				opacity: 0;
+			}
+			.left-explane.on {
+				transform: translateX(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.left-explane');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+	<!--------遠鉄電車の全駅紹介-------->
+	<section id="station-info">
+		<p class="flip-title">
+			遠州鉄道は、西鹿島と新浜松を発着点に合計18個の駅があります。
+			<br>
+			ここでは浜松市内を縦断する赤電の全駅を、拡大画像付きでご紹介いたします。
+		</p>
+			<figure>
+				<img src="images/Nishi-kajima-sta.jpg" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					西鹿島駅
+					</figcaption>
+				</figure>
+		
+			<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					岩水寺駅
+					</figcaption>
+				</figure>
+		
+			<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					遠州芝本駅
+					</figcaption>
+				</figure>
+	
+		<figure>
+			<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					小林駅
+					</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					美薗中央公園駅
+					</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					浜北駅
+					</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="images/Komatsu-sta.jpg" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					小松駅
+					</figcaption>
+		</figure>
+		
+		<figure class="flip-images">
+				<img src="#" width="350" height="350">
+				<figcaption class="flip-title">
+					西ヶ崎駅
+				</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					積志駅
+				</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					さぎの宮駅
+					</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="images/Jidousya-gakkou-sta.jpg" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					自動車学校前駅
+					</figcaption>
+		</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					上島駅
+					</figcaption>
+		</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					曳馬駅
+				</figcaption>
+		</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					助信駅
+					</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					八幡駅
+					</figcaption>
+				</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					遠州病院駅
+				</figcaption>
+		</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					第一通り駅
+					</figcaption>
+		</figure>
+		
+		<figure>
+				<img src="#" width="350" height="350" class="flip-images">
+				<figcaption class="flip-title">
+					新浜松駅
+					</figcaption>
+		</figure>
+		
+	</section>
+		
+		<style type="text/css">
+			.flip-intro {
+				opacity : 0;
+				transition: 3s;
+				transform: translateX(-120px);
+			}
+			.flip-intro.on {
+				transform: translateX(0);
+				opacity: 1.0;
+			}
+		     /*アニメーション要素までスクロールした時のスタイル*/
+			.active {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(0);
+        }
+			</style>
+		
+		<script type="text/javascript">
+          $(function(){
+            $(window).on('load scroll',function (){
+              $('.flip-intro').each(function(){
+                //ターゲットの位置を取得
+                var target = $(this).offset().top;
+                //スクロール量を取得
+                var scroll = $(window).scrollTop();
+                //ウィンドウの高さを取得
+                var height = $(window).height();
+                //ターゲットまでスクロールするとフェードインする
+                if (scroll > target - height){
+                  //クラスを付与
+                  $(this).addClass('active');
+                }
+              });
+            });
+          });
+		</script>
+		
+		<style type="text/css">
+			.flip-images {
+				transition: 1.5s ease-in-out;
+				transform: translateY(150px);
+				opacity: 0;
+			}
+			.flip-images.on {
+				transform: translateY(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.flip-images');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+		<style type="text/css">
+			.flip-title {
+				transition: 2.0s ease-in-out;
+				transform: translateX(150px);
+				opacity: 0;
+			}
+			.flip-title.on {
+				transform: translateX(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.flip-title');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+	</div>
+		 </body>
+		 <footer>
+
+			<nav id="h-foot-menu">
+				<ul class="h-main-part">
+					<li><a href="h-product.html">作る浜松</a></li>
+					<li><a href="h-event.html">魅せる浜松</a></li>
+					<li><a href="h-eating.html">食べる浜松</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li><a href="h-sports.html">スポーツの浜松</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+				</ul>
+				<ul class="h-social">
+					<li><img src="images/insta-mark.gif"><a href="#">hamatour</a></li>
+					<li><img src="images/fb-mark.gif"><a href="#">hamatour-meta</a></li>
+				</ul>
+			</nav>
+		 </footer>
+</html>

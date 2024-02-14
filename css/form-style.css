@@ -1,0 +1,85 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+h1,h2 {
+    width: 1000px;
+    text-align: center;
+    padding: 5px 0;
+}
+h1 {
+    width: 1000px;
+    background-color: #ffd700;
+}
+h2 {
+    background-color: #adff2f;
+    margin: 5px 0; 
+}
+#confirm {
+	width: 1000px;
+	overflow: hidden;
+	margin: 10px 0 20px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 3px 3px -3px #ff0000;
+}
+#info-show {
+	width: 900px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #d3d3d3;
+    box-shadow: 3px 3px -3px #ffd700;
+}
+#info-show tr {
+    padding: 10px 0;
+}
+.info-part {
+    text-align: center;
+}
+#confirm #sending {
+    text-align: center;
+    border: none;
+}
+#confirm #back-button {
+    border: 1px solid #000;
+    box-shadow: 1px 1px -1px #d3d3d3 ;
+	margin: 10px 0;
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+}
+#confirm #next-button {
+    border: 1px solid #000;
+    background-color: #0000ff;
+    box-shadow: 1px 1px -1px #d3d3d3 ;
+	margin: 10px 0;
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+#thanks-mes {
+    font-weight: bold;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+#first-enter {
+    text-align: center;
+    border: none;
+}
+#first-enter #backto-enter {
+    background-color: #b7a077;
+    border: 1px solid #b7a077;
+    padding: 15px 100px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+    cursor: pointer;
+    transition: backgroud-color 0.5s linear;    
+}

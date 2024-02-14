@@ -1,0 +1,763 @@
+@charset "utf-8";
+body {
+    width: 100vw;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+a:hover {
+	cursor: pointer;
+}
+#h-navi li a:visited,
+#breadcrumb ol li a:visited,
+#h-foot-menu li a:visited {
+	color: inherit;
+}
+header {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+header h1 {
+	float: left;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+header h1 img {
+	width: 300px;
+	height: 150px;
+	margin: 0;
+	padding: 0;
+}
+header #social {
+	float: right;
+	margin-top: 50px;
+	
+}
+.sns-intro {
+	text-align: left;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	font-size: 15px;
+	text-shadow: 2px 2px 2px #00ff00;
+}
+header #social ul {
+	float: right;
+	margin-top: 10px;
+	padding: 0;
+}
+header #social ul li {
+	float: right;
+	padding: 0;
+	list-style: none;
+}
+/*-----------------------------
+	g-navi
+------------------------------*/
+#h-main-pages {
+	width: 100vw;
+	margin: 0 auto;
+	text-align: center;
+}
+#h-navi {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+	padding: 25px;
+	border: 2px solid #fff;
+	background-image: url(../images/bgcover-3.jpg);
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+#h-navi li {
+	float: left;
+	width: 200px;
+	border-left: 2px solid #ff0000;
+	list-style: none;
+}
+#h-navi li:first-child {
+	margin-left: 110px;
+}
+#h-navi li:last-child {
+	border-right: 2px solid #ff0000;
+}
+#h-navi li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+    font-size: 25px;
+}
+#h-navi li a:hover {
+	color: #fff;
+	background-color: #0000ff;
+	border: 1px solid #fff;
+	border-radius: 60%;
+	transition: 0.3s;
+	padding: 10px;
+	box-shadow: -3px -3px 3px #d5d5d5;
+}
+/*------------------------------
+  ヘッダー画像のストリーミング
+------------------------------*/
+#head-move {
+	position: relative;
+	width: 100vw;
+	height: 480px;
+	background-color: #E3D0D1;
+	overflow: hidden;
+	}
+#head-move img {
+	width: 1100px;
+	height: 480px;
+	margin-left: 60px;
+}
+#head-move .head-words {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%; 
+	height: 100%;
+	font-weight: lighter;
+	font-size: 25px;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+	text-shadow: -2px 2px 2px #d5d5d5,  2px 2px 2px #d5d5d5;
+}
+/*------------------------------
+  パンくずリスト
+------------------------------*/
+#breadcrumb { 
+	width: 100vw;
+	background-color: #00ff00;
+	font-weight: bolder;
+	text-shadow: 5px 5px 2px #d3d3d3;
+	margin: 0 cal(50% - 50vw);
+	list-style: none;
+    padding: 5px 0 5px 100px ;
+}
+#breadcrumb ol li {
+    display: inline; 
+}
+#breadcrumb ol li::after {
+    content: ">";
+    padding-left: 8px;
+}
+#breadcrumb ol li:last-child::after { 
+    content: none;
+}
+/*-----------------------------
+　　　タイトルバーの表示設定
+------------------------------*/
+.index-title,
+.info-intro {
+	padding-left: 130px;
+}
+.index-name {
+	width: 100vw;
+	border: 2px solid #fff;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+	text-shadow: 3px 3px 3px #f5f5f5,  -3px -3px 3px #f5f5f5;
+	padding: 20px 0 20px 130px;
+	margin: 0 cal(50% - 50vw);
+	background: linear-gradient(45deg, #66ccff, #ffff99, #00ff99);
+	background-size: 200% 200%;
+	animation: bggradient 10s ease infinite;
+}
+@keyframes bggradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*-----------------------------
+　　　全メニューページの表示設定
+------------------------------*/
+#h-contents {
+	width: 1100px;
+	margin-left: 0;
+	padding: 0;
+}
+#h-variety-corner {
+	width: 100vw;
+	margin: 0 cal(50% - 50vw);
+	padding: 0;
+	overflow: hidden;
+}
+#h-variety-corner section {
+	float: left;
+	width: 100vw;
+}
+#h-variety-corner figure {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+#h-variety-corner figure img {
+	float: left;
+	margin-right: 40px;
+	border-radius: 300px;
+	padding: 0;
+}
+#h-variety-corner figure p {
+	text-shadow: 3px 3px 3px #00ff00;
+	font-size: 20px;
+	font-family: "ＭＳ Ｐ明朝", "ＭＳ 明朝", "BIZ UDP明朝 Medium", "BIZ UD明朝 Medium";
+	letter-spacing: 0.4em;
+	line-height: 1.5em
+}
+#variety-intro {
+	width: 1000px;
+	margin-bottom: 20px;
+}
+.h-intro {
+	width: 1100px;
+	margin-left: 0px;
+	letter-spacing: 0.3em;
+}
+/*-----------------------------
+　　 　浜松城
+------------------------------*/
+#kanko-objects {
+	width: 1100px;
+	margin-left: 150px;
+	padding: 0;
+}
+#castle-history {
+	width: 1100px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#right-view, #left-view, #castle-times {
+	width: 1100px;
+	margin: 0;
+	overflow: hidden;
+}
+#right-view p {
+	float: left;
+	width: 500px;
+	margin-right: 40px;
+	letter-spacing: 0.2em;
+}
+#right-view figure img {
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+}
+#left-view figure img {
+	float: left;
+	margin-right: 40px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+}
+.kanko-detail {
+	background-image: url("../images/bgcover-4.jpg");
+	padding: 20px 0 20px 20px;
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+	text-shadow: 2px 2px 2px #d5d5d5;
+	letter-spacing: 0.3em;
+	box-shadow: 2px 2px 2px #b0c4de;
+}
+#castle-times {
+	margin: 100px 0;
+	padding: 0;
+}
+#castle-times dl {
+	width: 900px;
+	margin: 0;
+	padding-top: 10px;
+	border: 2px solid #d3d3d3;
+	box-shadow: 2px 2px 2px #d5d5d5;
+}
+#castle-times dl dt {
+	float: left;
+	width: 300px;
+	text-align: center;
+	padding: 8px 0;
+}
+#castle-times dl dd {
+	padding: 8px 0;
+	letter-spacing: 0.1em;
+}
+#castle-view {
+	width: 1100px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#castle-view ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#castle-view ul li {
+	width: 200px;
+	float: left;
+	margin: 0 60px 20px 0;
+}
+#castle-view ul li img {
+	border: 1px solid #d5d5d5;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #d5d5d5;
+} 
+#castle-view ul li:first-child,
+#castle-view ul li:nth-child(5) {
+	margin-left: 60px;
+}
+.click_big:checked {
+	transform: scale(3, 3);
+}
+#park-view h3, #drama-kan h3 {
+	text-align: center;
+	letter-spacing: 0.2em;
+	text-shadow: 1px 1px 2px #0000ff;
+}
+#park-view section:first-child, 
+#drama-kan section:first-child,
+#park-view section:nth-child(3), 
+#drama-kan section:nth-child(3) {
+	padding-left: 0;
+	margin-right: 200px;
+}
+#park-view, #drama-kan {
+	width: 1100px;
+	margin-left: 10px;
+	padding: 0;
+	overflow: hidden;
+}
+#park-view section, #drama-kan section {
+	float: left;
+	width: 400px;
+	padding: 0;
+}
+#park-view section figure img, #drama-kan section figure img {
+	margin-left: 0;
+	box-shadow: 5px 5px 5px #d3d3d3;
+	border-radius: 20px;
+}
+#park-view section p, #drama-kan section p {
+	width: 400px;
+	letter-spacing: 0.2em;
+	line-height: 25px;
+}
+.castle-round {
+	width: 550px;
+	color: #fff;
+	text-shadow: 2px 2px 2px #adff2f;
+	letter-spacing: 0.2em;
+	background-image: url("../images/bgcover-1.jpg");
+	border-radius: 20px;
+	padding: 20px 0 20px 30px;
+}
+/*-----------------------------
+      フラワーパーク
+------------------------------*/
+#park-index {
+	font-style: oblique;
+}
+.flower-slide-box {
+	width: 90%;
+	margin: 0 10%;
+	border: 2px solid #fff;
+	overflow: hidden;
+}
+.back-set:first-child {
+	background-image: url("../images/Rose.jpg");
+	background-position: center;
+	background-size: cover;
+	border-bottom: 2px solid #fff;
+	border-right: 1px solid #fff;
+	border-top-left-radius: 10px;
+}
+.back-set:nth-child(2) {
+	background-image: url("../images/Ajisai.jpg");
+	background-position: center;
+	background-size: cover;
+	border-bottom: 2px solid #fff;
+	border-top-right-radius: 10px;
+}
+.back-set:nth-child(3) {
+	background-image: url("../images/Ameji.jpg");
+	background-position: center;
+	background-size: cover;
+	border-right: 1px solid #fff;
+	border-bottom-left-radius: 10px;
+}
+.back-set:nth-child(4) {
+	background: url("../images/Hana-shobu.jpg");
+	background-position: center;
+	background-size: cover;
+	border-bottom-right-radius: 10px;
+}
+.back-set {
+	float: left;
+	width: 45%;
+	box-shadow: 5px 5px 5px #d5d5d5;
+}
+.season {
+	padding: 20px 0 20px 10px;
+	font-size: 50px;
+	text-shadow: 2px 2px 2px #d5d5d5;
+}
+.season a {
+	color: #000;
+	text-decoration: none;
+}
+.season a:hover {
+	color: #fff;
+	transition: 0.3s;
+}
+.memo {
+	color: #ff0000;
+	font-weight: lighter;
+	text-shadow: 2px 2px 2px #d5d5d5;
+}
+#price-info tr:first-child {
+	background-color: #f0e68c;
+	text-shadow: 2px 2px 2px #fff;
+	font-style: oblique;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+	color: #a52a2a;
+}
+#price-index:not(:first-child) {
+	margin-top: 50px;
+}
+.flower-park-price {
+	width: 1100px;
+	text-align: center;
+	background-color: #bc8f8f;
+	color: #fff;
+	padding: 20px 0;
+    box-shadow: 2px 2px 2px #d5d5d5;
+}
+#price-index:last-child {
+	border-bottom: none;
+}
+#price-index {
+	border-bottom: 1px solid #000;
+}
+#price-info {
+	width: 1100px;
+	text-align: center;
+	padding: 0;
+	margin: 10px 0 100px 0;
+	font-size: 15px;
+}
+#price-info tr td {
+	padding: 20px;
+}
+.period {
+	background-color: #b7a077;
+}
+#parking-info {
+	width: 1100px;
+	padding: 0;
+	margin: 10px auto 10px 0;
+	font-size: 15px;
+}
+#parking-info tr td:first-child {
+	width: 300px;
+	text-align: center;
+	background-color: #b7a077;
+	color: #fff;
+}
+#parking-info tr td:nth-child(2) {
+	background-color: #ffff99;
+}
+.parking-detail {
+	padding-left: 30px;
+	color: #b7a077;
+	font-style: oblique;
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+.parking-detail-two {
+	font-size: 12px;
+	letter-spacing: 0.3em;
+	margin-top: 10px;
+}
+.line {
+	text-align: center;
+	color: #d3d3d3;
+}
+/*-----------------------------
+      フルーツパーク
+------------------------------*/
+#west-area {
+	width: 1100px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#west-object {
+    width: 1100px;
+    text-align: center;
+    background: linear-gradient(15deg, #adff2f, #fff0f5);
+    padding: 15px 0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: "ＭＳ Ｐ明朝", "ＭＳ 明朝", "BIZ UDP明朝 Medium", "BIZ UD明朝 Medium";
+    font-style: italic;
+}
+.frp-text {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 80px;
+    letter-spacing: 0.2em;
+    word-spacing: 10px;
+    font-style: italic;
+
+}
+#frp-right-view, #frp-left-view {
+	width: 1100px;
+	margin: 0;
+	overflow: hidden;
+}
+#frp-right-view p {
+	float: left;
+	width: 550px;
+	margin-left: 30px;
+	margin-right: 40px;
+	letter-spacing: 0.2em;
+}
+#frp-right-view figure img {
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+	margin-left: 40px;
+}
+#frp-left-view figure img {
+	float: left;
+	margin-right: 40px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 2px #d3d3d3;
+}
+/*-----------------------------
+      新居関所
+------------------------------*/
+#main-list {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#main-list li:first-child {
+	margin-left: 150px;
+}
+#main-list li {
+	float: left;
+	width: 200px;
+	font-style: oblique;
+	color: #fff;
+	background-color: #d5d5d5;
+	margin-right: 50px;
+	padding: 10px 0;
+	border: 1px solid #000;
+	border-radius: 15px;
+	list-style: none;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+#main-list li a:hover {
+	font-size: 20px;
+	text-decoration: none;
+}
+#legacy {
+	width: 900px;
+	border: 2px solid #000;
+	text-shadow: 2px 2px 2px #d5d5d5;
+}
+#legacy dt {
+	float: left;
+	width: 200px;
+	text-align: center;
+}
+#legacy dd {
+	padding-left: 10px;
+}
+#legacy dt,
+#legacy dd {
+	padding: 10px 0;
+	border-bottom: 1px dashed #d5d5d5;
+	border-right: 1px dashed #d5d5d5;
+}
+.Arai-left-view:first-child {
+	margin-top: 50px;
+}
+.Arai-left-view:last-child {
+	margin-top: 0;
+}
+#sekisyo-corner {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.Arai-left-view,
+.Arai-right-view {
+	width: 800px;
+	margin: 100px 0;
+	padding: 0;
+	overflow: hidden;
+}
+.Arai-left-view figure {
+	float: left;
+	width: 300px;
+	margin-right: 100px;
+}
+.Arai-right-view p {
+	float: left;
+	width: 400px;
+	padding-right: 50px;
+}
+.explane-move {
+	font-style: oblique;
+	word-spacing: 2px;
+	letter-spacing: 0.2em;
+}
+.Arai-left-view figure figcaption {
+	text-align: center;
+	font-weight: bolder;
+	font-style: oblique;
+	letter-spacing: 0.2em;
+	text-shadow: 2px 2px 2px #d5d5d5;
+}
+.Arai-right-view figure figcaption {
+	text-align: right;
+	font-weight: bolder;
+	font-style: oblique;
+	letter-spacing: 0.2em;
+	margin-right: 150px;
+	text-shadow: 5px 5px 5px #d5d5d5;
+}
+/*-----------------------------
+　　 　フルーツパーク
+------------------------------*/
+#h-frp {
+	width: 1200px;
+	margin: 0;
+	padding: 0;
+}
+#west-amusement,
+#east-amusement {
+	width: 100vw;
+	margin: 0 calc(59% - 50vw);
+	background-color: #D5D5D5;
+	box-shadow: -3px -2px #ffff00;
+}
+#west-amusement section,
+#east-amusement section {
+	width: 1200px;
+	margin-left: 20px;
+	padding: 0;
+	overflow: hidden;
+}
+#west-amusement section figure,
+#east-amusement section figure {
+	float: left;
+	width: 450px;
+	margin-right: 80px;
+}
+#west-amusement section figure img,
+#east-amusement section figure img {
+	border-radius: 500px 500px 300px 300px;
+	box-shadow: 5px 5px 5px #ffff00;
+}
+#west-amusement section figure figcaption, 
+#east-amusement section figure figcaption {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 0.5em;
+}
+#west-amusement section p, 
+#east-amusement section p {
+	font-weight: bold;
+	letter-spacing: 0.3em;
+	word-spacing: 50px;
+	padding-top: 30px;
+	font-size: 20px;
+}
+/*-----------------------------
+	      google map
+------------------------------*/
+#g-map-place p {
+	padding-left: 150px;
+}
+#g-map-place iframe {
+	width: 100vw;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/*-----------------------------
+	        footer
+------------------------------*/
+footer {
+	width: 100vw;
+	height: 300px;
+	background-image: url("../images/bgcover-4.jpg");
+	background-position: center;
+	background-size: cover;
+}
+#h-foot-menu {
+	text-shadow: -5px -5px 5px #d3d3d3;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	padding: 10px 0;
+}
+#h-foot-menu ul {
+	float: left;
+	width: 100vw;
+	list-style: none;
+	text-decoration: none;
+	margin: 20px calc(50vw - 50%);
+}
+#h-foot-menu ul li {
+	float: left;
+	width: 240px;
+	text-align: center;
+	text-decoration: none;
+}
+#h-foot-menu .h-social {
+	list-style: none;
+}
+#h-foot-menu .h-social li {
+	float: left;
+	width: 300px;
+	text-align: center;
+	margin: 50px 0 20px 30px;
+	padding: 10px 0;
+	border: 2px solid #ffff00;
+	border-radius: 20px;
+	background-color: #D55658;
+	box-shadow: -2px 2px 2px #fff;
+}
+.h-main-part {
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS P明朝", "MS 明朝", serif;
+	font-weight: bold;
+}
+.h-main-part a:hover {
+	text-decoration: none;
+	background-color: #b7a077;
+	color: #fff;
+	padding: 15px 20px;
+	border-radius: 10px;
+	transition: 0.3s linear;
+}
+/*-----------------------------
+	responsive site
+-----------------------------*/
+@media screen and (max-width: 800px) {
+	img {
+		max-width: 100%;
+	}
+}

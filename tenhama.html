@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<title>長閑に走る天浜線</title>
+</head>
+<body>
+	<!--------ヘッダ－-------->
+<header>
+		<h1 class="h-logo"><img src="images/H-logo.jpg"></h1>
+	<!--------ソーシャルネットワーキング－-------->
+		<div id="social">
+			<p class="sns-intro">SNSで浜松市を探索しよう</p>
+			<ul>
+				<li>
+					<a href=""><img src="images/insta-mark.gif">hamatour</a>
+				</li>
+				<li>
+					<a href=""><img src="images/fb-mark.gif">hamatour-meta</a>
+				</li>
+			</ul>
+		</div>
+</header>
+	<!--------G-navi-------->
+	<div id="h-main-pages">
+		<ul id="h-navi">
+			<li><a href="h-product.html">作る浜松</a></li>
+			<li><a href="h-event.html">魅せる浜松</a></li>
+			<li><a href="h-eating.html">食べる浜松</a></li>
+			<li><a href="h-sightseeing.html">観る浜松</a></li>
+			<li><a href="h-sports.html">スポーツの浜松</a></li>
+			<li><a href="h-traffic.html">走る浜松</a></li>
+		</ul>
+	</div>
+			<!--------パンくずリスト-------->
+			<div id="breadcrumb">
+				<ol>
+					<li><a href="top.html">トップページ</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+                    <li>天竜浜名湖鉄道</li>
+				</ol>
+				</div>
+	<!--------天竜浜名湖鉄道の概要-------->
+	<h1 class="index-name">天竜浜名湖鉄道</h1>
+	<div id="tenhama-info">
+	<div id="traffics">
+		<p id="top-return">
+			<a href="#gn_p">↑</a>
+		</p>
+		<style type="text/css">
+			#top-return {
+				text-align: center;
+				position: fixed;
+                bottom: 15px;
+                right: 15px;
+                font-size: 30px;
+				background-color: #F5E0E0;
+			}
+            #top-return a {
+				box-shadow: 2px 2px 2px #0000ff;
+                display: block;
+				border: 1px solid #000;
+				width: 60px;
+				height: 40px;
+				text-decoration-line: none;
+			}
+                        #top-return a:hover {
+							transition: 0.3s;
+							cursor: pointer;
+						}
+			 </style>
+    
+                        <script type="text/javascript">
+                        $(function(){
+                            var pagetop = $('#top-return');
+                            pagetop.hide();
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    pagetop.fadeIn();
+                                } else {
+                                    pagetop.fadeOut();
+                                }
+                            });
+                            pagetop.click(function () {
+                                $('body, html').animate({ scrollTop: 0 }, 10);
+                                return false;
+                            });
+                        });
+                        </script>
+	<p class="h-intro">
+		掛川～新所原間の長閑な山あいの風景を望むように走る天浜線!<br>
+		上下線ともに１時間１本という田舎ならではの少ない本数ながら、市民の足として元気に走り回ります。様々なラッピングを施した外観も魅力で、また全国的にも珍しい天竜二俣駅の転車台など国の有形文化財も数多く存在しています。まさに彩りと歴史の奥深さが同居したワンマン電車が天竜浜名湖鉄道なのです。
+		</p>
+				<!--------車種のご紹介-------->
+				<section id="train-sorts">
+					<h3 class="kanko-detail">田園風景を走る車種</h3>
+				<!--------TH2100形-------->
+				<section id="left-view">
+					<figure class="TH-left">
+						<img src="images/Tenhama-2.jpg" width="400" height="300">
+						<figcaption>TH2100形</figcaption>
+						</figure>
+					<table border="2" id="train-box-left" class="TH-right">
+					<tr>
+						<td class="table-line">形式</td>
+						<td>TH2100形</td>
+					</tr>
+					<tr>
+						<td class="table-line">定員</td>
+						<td>120名(着席定員52名)</td>
+					</tr>
+					<tr>
+						<td class="table-line">両数</td>
+						<td>14両</td>
+					</tr>
+					<tr>
+						<td>特徴</td>
+						<td>空転対策として、砂まき装置を設置</td>
+					</tr>
+				</table>
+					</section>
+				<!--------TH2100形 キハ20色塗装列車-------->
+				<section id="right-view">
+					<table border="2" id="train-box-right" class="TH-left">
+					<tr>
+						<td class="table-line">形式</td>
+						<td>TH2100形</td>
+					</tr>
+					<tr>
+						<td class="table-line">定員</td>
+						<td>120名(着席定員52名)</td>
+					</tr>
+					<tr>
+						<td class="table-line">両数</td>
+						<td>14両</td>
+					</tr>
+					<tr>
+						<td>特徴</td>
+						<td>ラッピングに注目!車内はこれまでの歴史や実際に使われた蒸気機関車、気動車や扇形車庫等の説明が掲載</td>
+					</tr>
+				</table>
+					<figure class="TH-right">
+						<img src="images/Tenhama-5.jpg" width="400" height="300">
+						<figcaption>TH2100形式&nbsp;キハ20色塗装列車</figcaption>
+						</figure>
+					</section>
+				<!--------TH-2100形-------->
+				<section id="left-view">
+					<figure class="TH-left">
+						<img src="images/TH-3000.jpg" width="400" height="300">
+						<figcaption>TH3000系</figcaption>
+						</figure>
+					<table border="2" id="train-box-right" class="TH-right">
+					<tr>
+						<td class="table-line">形式</td>
+						<td>TH3000形</td>
+					</tr>
+					<tr>
+						<td class="table-line">定員</td>
+						<td>120名(着席定員52名)</td>
+					</tr>
+					<tr>
+						<td class="table-line">両数</td>
+						<td>14両</td>
+					</tr>
+					<tr>
+						<td>特徴</td>
+						<td>空転対策として、砂まき装置を設置</td>
+					</tr>
+				</table>
+					</section>
+					<!--------ラッピング電車-------->
+					<h3 class="kanko-detail">魅惑的なラッピング電車一覧</h3>
+					<p>
+						過去も未来も天浜線を盛り上げてきた一つに、ラッピング電車があります。<br>
+						地元企業とのコラボ、あるいは沿線沿いでの各種イベントの宣伝を目的とした多彩なデザインは鉄道ファンも魅了。長閑な風景に彩りを加える車両を複数紹介していきます。
+					</p>
+					<!--------かけがわ茶エンナーレ-------->
+					<section id="left-view" class="TH-left">
+						<figure>
+							<img src="images/Tenhama-3.jpg" width="400" height="300">
+							<figcaption>かけがわ茶エンナーレ</figcaption>
+						</figure>
+						<p class="TH-right">
+							2020年11月に行われたお茶がテーマの芸術祭の開催中に、走行したものです。
+							車両全体がまさにお茶で纏われたように、茶葉と緑色のラッピングが印象的です。
+						</p>
+					</section>
+					<!--------宝くじ号-------->
+					<section id="right-view">
+						<p class="TH-left">
+							宝くじ号は、宝くじの助成金で作られた気動車でTH9200が原型です。<br>
+							車両の外観ではカラフルなものだけでなく、全体が濃い青色の車両もあります。一時は休止の時もありましたが、TH3501の勇退時に復活しました。
+						</p>	
+						<figure class="TH-right">
+							<img src="images/TH-9200.jpg" width="400" height="300">
+							<figcaption>宝くじ号</figcaption>
+						</figure>
+					</section>
+					<!--------スローライフ号-------->
+					<section id="left-view">
+						<figure class="TH-left">
+							<img src="images/TH-slowlife.jpg" width="400" height="300">
+							<figcaption>スローライフ号</figcaption>
+						</figure>
+						<p class="TH-right">
+							フィンランドのファブリックブランド「マリメッコ」とコラボレーションをしたスローライフ号。<br>
+							2015年に運行を始め、車内のカーテンとヘッドレストカバーは同社のデザインを取り入れており、北欧風のシックな雰囲気が味わえます。
+							ちなみに、写真は２代目で初代はエンジ色のラインが特徴的でした。２代目ではカーテンのカラーも様々で、その彩りとともに車窓を楽しむのもお薦めです。
+						</p>	
+					</section>
+					<!--------ぶんぶん号-------->
+					<section id="right-view">
+						<p class="TH-left">
+							三ケ日町にある株式会社長坂養蜂場のキャラクター・「ぶんぶん」「とるんるん」とコラボしたものです。<br>
+							2022年4月1日より運行開始され、その愛くるしさで人気を博しており、内装も独特で、ミツバチを通して自然や食の大切さを学ぶクイズやデザインをあしらっています。	まさに大人から子供まで楽しく学べる食育列車として楽しまれ、長坂養蜂場の最寄駅・奥浜名湖駅では「ぶんぶんに出会えるまち」という副駅名でネーミングライツ・スポンサー契約が締結されました。
+						</p>
+						<figure class="TH-right">
+							<img src="images/TH-Ｎagasaka.jpg" width="400" height="300">
+							<figcaption>ぶんぶん号</figcaption>
+						</figure>
+					</section>
+
+			</section>
+		
+		<!--------文化財を楽しむ-------->
+		<div id="TH-legacy">
+			<h3 class="kanko-detail">文化財を楽しむ</h3>
+			<p>
+			天浜線は、全長67.7㎞の運転区間において36件の国の指定の登録有形文化財を有しています。
+				<br>
+			代表的な天竜二俣駅構内の転車台や扇形車庫といった施設に、金指駅や天竜二俣駅・気賀駅などの駅やプラットフォームなどが登録され、天浜線の歴史の奥深さが国からも高い評価を受けていることが垣間見えます。
+			</p>
+		<!--------転車台-------->
+			<section id="legacy-index">
+				
+			<section>
+				<figure class="TH-left">
+					<img src="images/tensya.jpg">
+					<figcaption>転車台</figcaption>
+					</figure>
+				<table class="TH-right">
+					<tr>
+						<td class="legacy-first-tr">製造年</td>
+						<td class="legacy-first-tr">昭和15年</td>
+						</tr>
+					<tr>
+						<td>登録年月日</td>
+						<td>平成10年12月</td>
+						</tr>
+					</table>
+				</section>
+				
+				<p class="legacy-intro">
+					全国でも160台もの転車台がありますが、静岡県内では大井川鉄道を含めて３つです。
+					<br>
+					天竜二俣駅内のそれは、そもそも蒸気機関車の進行方向を転換させる目的で製造。現在は電動で操作されますが、建設当初は手動でした。
+					<br>
+					当初は掛川駅や金指駅にもありましたが、現在は天竜二俣駅のみにあります。
+					</p>
+				</section>
+			<!--------扇形車庫-------->
+			<section id="legacy-index">
+			<section>
+				<figure class="TH-left">
+					<img src="images/Ogigata-syako.jpg">
+					<figcaption>扇形車庫</figcaption>
+					</figure>
+				<table class="TH-right">
+					<tr>
+						<td class="legacy-first-tr">製造年</td>
+						<td class="legacy-first-tr">昭和15年</td>
+						</tr>
+					<tr>
+						<td>登録年月日</td>
+						<td>平成10年12月</td>
+						</tr>
+					</table>
+				</section>
+				<p class="legacy-intro">
+					木造平屋建で建築面積は686㎡あります。建設当時は6線分の格納が可能でしたが、転車台から見て右側2線分が縮められています。
+					<br>
+					耐久性に不安のある木造ですが、庫内に下る柱を少なくするために力強い架構を備えた作りとなっています。
+					<br>
+					転車台と同じタイミングで、国の指定の登録有形文化財に登録されています。
+				</p>
+				</section>
+			<!--------三ケ日駅本屋-------->
+			<section id="legacy-index">
+			<section>
+				<figure class="TH-left">
+					<img src="images/Mikkabi-eki.jpg">
+					<figcaption>三ケ日駅本屋</figcaption>
+					</figure>
+				<table class="TH-right">
+					<tr>
+						<td class="legacy-first-tr">製造年</td>
+						<td class="legacy-first-tr">昭和11年</td>
+						</tr>
+					<tr>
+						<td>登録年月日</td>
+						<td>平成23年1月26日</td>
+						</tr>
+					</table>
+				</section>
+				<p class="legacy-intro">
+					天浜線の駅舎らしく、外壁は建板張り、待合室は当初からの造付け木製ベンチが残存しています。
+					<br>
+					出入口付近にはレンタサイクルが用意されており、奥浜名湖周辺を潮風を浴びながらサイクリングできるのもこの駅の特徴。
+					<br>
+					ちなみに「三ヶ日」という地名は、月の三の日に市が開かれたことから付けられたと言われております。
+				</p>
+				</section>
+			
+			</div>
+		<style type="text/css">
+			.TH-left {
+				transition: 1.2s ease-in-out;
+				transform: translateX(-150px);
+				opacity: 0;
+			}
+			.TH-left.on {
+				transform: translateX(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.TH-left');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+		<style type="text/css">
+			.TH-right {
+				transition: 1.2s ease-in-out;
+				transform: translateX(150px);
+				opacity: 0;
+			}
+			.TH-right.on {
+				transform: translateX(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.TH-right');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+		<style type="text/css">
+			.legacy-intro {
+				transition: 1.0s ease-in-out;
+				transform: translateY(150px);
+				opacity: 0.2;
+			}
+			.legacy-intro.on {
+				transform: translateY(0);
+				opacity: 1.0;
+			}
+		
+			</style>
+		
+		<script type="text/javascript">
+		
+			$(window).scroll(function () {
+				var scrollAnimationElm = document.querySelectorAll('.legacy-intro');
+				var scrollAnimationFunc = function () {
+					for (var i = 0; i < scrollAnimationElm.length; i++) {
+						var triggerMargin = 100;
+						if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+							scrollAnimationElm[i].classList.add('on');
+						}
+					}
+				}
+				window.addEventListener('load', scrollAnimationFunc);
+				window.addEventListener('scroll', scrollAnimationFunc);
+			});
+		</script>
+		
+		</div>
+	</div>
+		 </body>
+		 <footer>
+
+			<nav id="h-foot-menu">
+				<ul class="h-main-part">
+					<li><a href="h-product.html">作る浜松</a></li>
+					<li><a href="h-event.html">魅せる浜松</a></li>
+					<li><a href="h-eating.html">食べる浜松</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li><a href="h-sports.html">スポーツの浜松</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+				</ul>
+				<ul class="h-social">
+					<li><img src="images/insta-mark.gif"><a href="#">hamatour</a></li>
+					<li><img src="images/fb-mark.gif"><a href="#">hamatour-meta</a></li>
+				</ul>
+			</nav>
+		 </footer>
+</html>

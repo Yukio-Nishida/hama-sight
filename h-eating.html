@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<link rel="stylesheet" href="css/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<title>自然豊かな味を体感しよう</title>
+</head>
+<body>
+<header>
+		<h1 class="h-logo"><img src="images/H-logo.jpg"></h1>
+	</header>
+	<div id="h-main-pages">
+		<ul id="h-navi">
+			<li><a href="h-product.html">作る浜松</a></li>
+			<li><a href="h-event.html">魅せる浜松</a></li>
+			<li><a href="h-eating.html">食べる浜松</a></li>
+			<li><a href="h-sightseeing.html">観る浜松</a></li>
+			<li><a href="h-sports.html">スポーツの浜松</a></li>
+			<li><a href="h-traffic.html">走る浜松</a></li>
+		</ul>
+	</div>
+			<!--------パンくずリスト-------->
+			<div id="breadcrumb">
+				<ol>
+					<li><a href="top.html">トップページ</a></li>
+					<li>食べる浜松</li>
+				</ol>
+				</div>
+				<div id="h-contents">
+					<p id="top-return">
+                            <a href="#gn_p">↑</a>
+                        </p>
+            
+                        <style type="text/css">
+                        
+                        #top-return {
+							text-align: center;
+							position: fixed;
+                            bottom: 15px;
+                            right: 15px;
+                            font-size: 30px;
+							background-color: #F5E0E0;
+                        }
+                        #top-return a {
+							box-shadow: 2px 2px 2px #0000ff;
+                            display: block;
+							border: 1px solid #000;
+							width: 60px;
+							height: 40px;
+							text-decoration-line: none;
+                            }
+                        #top-return a:hover {
+							transition: 0.3s;
+							cursor: pointer;
+						}
+			 </style>
+    
+                        <script type="text/javascript">
+                        $(function(){
+                            var pagetop = $('#top-return');
+                            pagetop.hide();
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    pagetop.fadeIn();
+                                } else {
+                                    pagetop.fadeOut();
+                                }
+                            });
+                            pagetop.click(function () {
+                                $('body, html').animate({ scrollTop: 0 }, 10);
+                                return false;
+                            });
+                        });
+                        </script>
+			<!--------料理・土産紹介-------->
+			<h1 class="index-title">名産の数々</h1>
+			<p class="info-intro">
+				浜松市というのは全国に誇れる食の宝庫といっていいでしょう。<br>
+            東には天竜川、西に浜名湖、南に遠州灘、そして北に天竜美林と東西南北に豊かな自然環境に恵まれています。<br>
+            静岡県特有の温暖な気候も好影響をもたらし、全国的な知名度を誇る浜名湖の<span>養殖ウナギ</span>や<span>三ケ日みかん</span>、<span>浜松餃子</span>など
+            名物の山の幸や海の幸に恵まれているのが最大の理由と考えられています。<br><br>
+            しかし、"食べる"だけに限らずそれらを生かしたお土産物も代表的なものばかりで、帰省や旅行での人気No.1といえる<span>うなぎパイ</span>やみかん大福、銘菓として名高い
+            <span>治一郎のバウムクーヘン</span>など特筆すべきものは数知れず!常に人の心を惹きつける食の魅力が詰まっています。
+            </p>
+					<section id="h-variety-corner">
+					<!-----鰻の蒲焼----->
+					<section id="variety-intro">
+			<h2 class="index-name">うなぎの蒲焼</h2>
+			<figure>
+				<img src="images/U-kabayaki.JPG" width="450" height="338">
+			<p class="right-explane">
+				「浜松」で一番に思い付くソウルフードではないでしょうか？<br>
+				うなぎ養殖の発祥の地である浜名湖は、淡水と海水が入り混じった汽水湖で、鰻の稚魚のシラスウナギの・・・<a href="kabayaki.html">(続きを見る)</a>
+			</p>
+		</figure>
+			</section>
+				<!-----浜松餃子----->
+			<section id="variety-intro">
+			<h2 class="index-name">浜松餃子</h2>
+			<figure>
+				<img src="images/H-gyoza.jpg" width="450" height="338">
+			<p class="right-explane">
+				ここ数年、年間購入量は全国No.1を誇る浜松餃子<br>
+			本場の栃木県宇都宮市を抜き、2018年・2021年で日本一に輝いたその特徴は餡に使われる
+			素材にあります。一般的な・・・<a href="h-gyoza.html">(続きを見る)</a>
+				</p>
+		</figure>
+		</section>
+				<!-----牡蠣カバ丼----->
+				<section id="variety-intro">
+					<h2 class="index-name">牡蠣カバ丼</h2>
+				<figure>
+					<img src="images/kakikabadon.jpg" width="450" height="338">
+					<p class="right-explane">
+						浜名湖の名産料理は鰻だけではありません。<br>
+					ボイルした牡蠣を鰻のタレで焼き上げて玉葱などをトッピングした牡蠣カバ丼は新たな浜名湖名物です。<br>
+					多くの実験を経て辿り着いた「ご当地レシピ」として・・・<a href="kakikadon.html">(続きを見る)</a>
+						</p>
+						</figure>
+			</section>
+				</section>
+						
+		 </div>
+		 </body>
+		 <footer>
+			<nav id="h-foot-menu">
+				<ul class="h-main-part">
+					<li><a href="h-product.html">作る浜松</a></li>
+					<li><a href="h-event.html">魅せる浜松</a></li>
+					<li><a href="h-eating.html">食べる浜松</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li><a href="h-sports.html">スポーツの浜松</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+				</ul>
+				<ul class="h-social">
+					<li><img src="images/insta-mark.gif"><a href="#">hamatour</a></li>
+					<li><img src="images/fb-mark.gif"><a href="#">hamatour-meta</a></li>
+				</ul>
+			</nav>
+		 </footer>
+</html>

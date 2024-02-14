@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keyword" content="">
+<meta name="discription" content="">
+<link rel="stylesheet" href="css/sightseeing.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<title></title>
+</head>
+<body>
+<header>
+		<h1 class="h-logo"><img src="images/H-logo.jpg"></h1>
+</header>
+	<div id="h-main-pages">
+		<!--------グローバルナビゲーション-------->
+		<ul id="h-navi">
+			<li><a href="h-product.html">作る浜松</a></li>
+			<li><a href="h-event.html">魅せる浜松</a></li>
+			<li><a href="h-eating.html">食べる浜松</a></li>
+			<li><a href="h-sightseeing.html">観る浜松</a></li>
+			<li><a href="h-sports.html">スポーツの浜松</a></li>
+			<li><a href="h-traffic.html">走る浜松</a></li>
+		</ul>
+	</div>
+			<!--------パンくずリスト-------->
+			<div id="breadcrumb">
+				<ol>
+					<li><a href="top.html">トップページ</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li>フルーツパーク</li>
+				</ol>
+				</div>
+	
+	<h1 class="index-name">フルーツパーク</h1>
+	<div id="kanko-objects">
+		<!--------最上部へ戻るボタンの設定-------->
+					<p id="top-return">
+                            <a href="#gn_p">↑</a>
+                        </p>
+            
+                        <style type="text/css">
+                        
+                        #top-return {
+							text-align: center;
+							position: fixed;
+                            bottom: 15px;
+                            right: 15px;
+                            font-size: 30px;
+							background-color: #F5E0E0;
+                        }
+                        #top-return a {
+							box-shadow: 2px 2px 2px #0000ff;
+                            display: block;
+							border: 1px solid #000;
+							width: 60px;
+							height: 40px;
+							text-decoration-line: none;
+                            }
+                        #top-return a:hover {
+							transition: 0.3s;
+							cursor: pointer;
+						}
+			 </style>
+    
+                        <script type="text/javascript">
+                        $(function(){
+                            var pagetop = $('#top-return');
+                            pagetop.hide();
+                            $(window).scroll(function () {
+                                if ($(this).scrollTop() > 100) {
+                                    pagetop.fadeIn();
+                                } else {
+                                    pagetop.fadeOut();
+                                }
+                            });
+                            pagetop.click(function () {
+                                $('body, html').animate({ scrollTop: 0 }, 10);
+                                return false;
+                            });
+                        });
+                        </script>
+		
+			<!--------フルーツパーク-------->
+				<p>
+					北区都田に位置し、東京ドーム約９個分の広大な敷地内を誇るフルーツパーク!
+                    <br>
+					本場の東南アジアの熱帯を再現した熱帯果樹温室や子供向けのアトラクションなどを設けた<span class="green">西エリア</span>や、イチゴ狩りやミカン狩りなど果物の味を楽しめる<span class="green">東エリア</span>など様々なコンテンツでも来訪客を魅了し、家族連れに最適な場所ですね。
+                    <br>
+					普段はなかなか知ることも少ないだろう、果物のいろはを経験できる体験型のアミューズメント施設としてかなりの人気を誇ります。
+				</p>
+			<!--------西エリア-------->
+					<h3 class="h-main-part">西エリア</h3>
+					<p>
+						西エリアには、熱帯でバナナやパパイヤの生育を観察できる熱帯果樹温室やふわふわ広場、フルーツオーケストラなどアミューズメント施設が立ち並んでいます。
+                        体験型の多い東エリアとは対照的に、観て感じることができるエリアの印象が強いですね。
+					</p>
+					<section id="west-area">
+                        <span class="area-name">トロピカルワインカーヴ&nbsp;～&nbsp;トロピカルドーム</span>
+                        <p>
+                            ワインの歴史や味など、ワインのいろはを学べる空間から、重厚なバナナの葉など実際の熱帯亜を再現したドームが連なる場所は非常に印象的です。
+                        </p>
+                            <!--------トロピカルワインカーブ-------->
+							<section id="frp-left-view" class="park-name">
+								<h2 id="west-object">トロピカルワインカーブ</h2>
+								<figure>
+								<img src="images/wine-carve.jpg" width="350" height="300">
+							</figure>
+							<p class="frp-text">
+								西エリアの出入口付近にあるワインカーブ。中に入ると、ワインセラーがあり世界中のワインがお目見えします。
+                                <br>
+                                さらに奥へ入ると醸造所があり、ここでは実際に醸造されているとのこと。
+							</p>
+						</section>
+                        <!--------ワインの世界地図-------->
+                        <section id="frp-right-view" class="park-name">
+							<h2 id="west-object">ワインの世界地図</h2>
+							<p class="frp-text">
+                                ワインセラーを通り過ぎると、階段の右壁に世界地図がお目見え!
+                                <br>
+                                世界中で醸造されるワインの分布地図で、各国のワイン文化を感じることができるでしょう。
+                            </p>
+							<figure>
+								<img src="images/wine-map.jpg" width="350" height="300">
+							</figure>
+						</section>
+                        <!--------トロピカルドーム-------->
+                        <section id="frp-left-view" class="park-name">
+							<h2 id="west-object">トロピカルドーム</h2>
+							<figure>
+								<img src="images/trp-dome01.jpg" width="350" height="300">
+							</figure>
+							<p class="frp-text">
+                               西エリアの本丸とも言える「トロピカルドーム」は、東南アジア特有の熱帯亜を再現した空間です。
+                               <br>
+                               施設内はこたえる蒸し暑さですが、パパイヤやバナナなど熱帯果樹80種・330本が植栽されています。
+                            </p>
+						</section>
+                        <!--------フルーツオーケストラ-------->
+                        <section id="frp-right-view" class="park-name">
+							<h2 id="west-object">フルーツオーケストラ</h2>
+							<p class="frp-text">
+                                家族連れに人気のある、フルーツ型の遊具施設を数多く有するエリアです。
+                                <br>
+                                「バナナレールウェイ」や「パイナップルタワー」、「カキのブランコ」などそれぞれに個性のあるものばかりで、魅力満点!
+                            </p>
+							<figure>
+								<img src="images/west-house.jpg" width="350" height="300">
+							</figure>
+						</section>
+                        <!--------時之栖サッカーグラウンド-------->
+                         <section id="frp-left-view" class="park-name">
+							<h2 id="west-object">時之栖サッカーグラウンド</h2>
+							<figure>
+								<img src="#" width="350" height="300">
+							</figure>
+							<p class="frp-text">
+                                フルーツオーケストラから、さらに北上すると全面人工芝のサッカーコートがあります。
+                                <br>
+                                ２か月前の１日より予約可能で、フットサルとしても３面分を利用することができます。
+                            </p>
+						</section>
+                        
+                    </section>
+	</div>
+					
+		 </body>
+	<!--------フッター-------->
+		 <footer>
+			<nav id="h-foot-menu">
+				<ul class="h-main-part">
+					<li><a href="h-product.html">作る浜松</a></li>
+					<li><a href="h-event.html">魅せる浜松</a></li>
+					<li><a href="h-eating.html">食べる浜松</a></li>
+					<li><a href="h-sightseeing.html">観る浜松</a></li>
+					<li><a href="h-sports.html">スポーツの浜松</a></li>
+					<li><a href="h-traffic.html">走る浜松</a></li>
+				</ul>
+				<ul class="h-social">
+					<li><img src="images/insta-mark.gif"><a href="#">hamatour</a></li>
+					<li><img src="images/fb-mark.gif"><a href="#">hamatour-meta</a></li>
+				</ul>
+			</nav>
+		 </footer>
+</html>
